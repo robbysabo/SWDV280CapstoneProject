@@ -9,3 +9,4 @@ As a \***\* I would like to \*\*\*** so that I can \*\*\*\*
 - Andrew Lane  - As a Customer, I would like to be able to cancel/reschedule any appointment I have in case anything comes up.
 - Robby Sabo - As a Customer, I would like to be able to download from, so that I can have all from already signed.
 - Eduardo Saucedo - As an admin, I would like the company's presence to be known through social media.
+- Matt Tarpley - As an employee it would be nice to have my name and image in the section detailing the work I do.
