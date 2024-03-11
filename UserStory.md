@@ -7,6 +7,7 @@ ADMIN
 - Brandon Deaton - As an admin, I want to have the ability to change photos
 - Bryce - As an admin I want to be able to see appointments for all sections.
 - Eduardo Saucedo - As an admin, I would like the company's presence to be known through social media.
+- Matt Tarpley - As an admin, I would like my best customer reviews displayed in a testimonial section.
   
 EMPLOYEES
 ==========================
