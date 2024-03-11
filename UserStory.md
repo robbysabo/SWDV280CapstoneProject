@@ -8,3 +8,4 @@ As a \***\* I would like to \*\*\*** so that I can \*\*\*\*
 - Bryce - As an admin I want to be able to see appointments for all sections.
 - Andrew Lane  - As a Customer, I would like to be able to cancel/reschedule any appointment I have in case anything comes up.
 - Robby Sabo - As a Customer, I would like to be able to download from, so that I can have all from already signed.
+- Eduardo Saucedo - As an admin, I would like the company's presence to be known through social media.
