@@ -9,6 +9,7 @@ SHOP OWNER
 - Michael Robins - As the owner, I want honest reviews good or bad, without any fowl language or trolling.
 - Michael Robins - I really like this customers review, can I post it on a blog or somewhere that will catch a visitors attention?
 - Michael Robins - As the owner, can I verify that this review was composed by a verified customer who has recieved our service, and not some fraud?
+- Brandon Deaton - As the owner, I want the ability to have direct contact with support if/when issues arise.
 
 EMPLOYEE/ADMIN
 ==========================
