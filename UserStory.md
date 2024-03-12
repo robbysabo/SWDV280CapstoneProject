@@ -42,3 +42,4 @@ USERS/CUSTOMERS
 - Robby Sabo - As a Customer, I would like to be able to download from, so that I can have all from already signed.
 - Michael Robins - As a Customer, I want to see examples of your work.
 - Michael Robins - As a Customer, what is the estimated time of completion for certain repairs?
+- Brandon Deaton - As a customer, I want to know that what I request can be performed on my specific vehicle
