@@ -1,6 +1,6 @@
 USER STORIES
 ==========================
-As a \***\* I would like to \*\*\*** so that I can \*\*\*\*
+As a \*\*\*\* I would like to \*\*\*\*\* so that I can \*\*\*\*
 
 SHOP OWNER
 ============
