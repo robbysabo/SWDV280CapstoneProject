@@ -5,6 +5,11 @@ IF DB_ID('ScrumProject') IS NOT NULL
     DROP DATABASE ScrumProject
 GO
 
+CREATE DATABASE ScrumProject
+GO
+
+USE ScrumProject
+
 --appointments table, no dependencies
 CREATE TABLE Appointments (
 	appt_id INT PRIMARY KEY IDENTITY,
@@ -39,3 +44,4 @@ CREATE TABLE Jobs (
 	img_id INT NOT NULL REFERENCES Images(img_id), --fk to images
 	u_id INT NOT NULL REFERENCES Users(u_id) --fk to users
 );
+
