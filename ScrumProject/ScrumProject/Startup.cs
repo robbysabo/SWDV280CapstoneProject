@@ -1,18 +1,22 @@
-﻿namespace ScrumProject
+﻿using Microsoft.EntityFrameworkCore;
+using ScrumProject.Models.DataLayer;
+
+namespace ScrumProject
 {
     public class Startup
     {
-        public IConfiguration configRoot
+        public IConfiguration ConfigRoot
         {
             get;
         }
         public Startup(IConfiguration configuration)
         {
-            configRoot = configuration;
+            ConfigRoot = configuration;
         }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddDbContext<ScrumProjectContext>(options => options.UseSqlServer(ConfigRoot.GetConnectionString("SPContext")));
         }
         public void Configure(WebApplication app, IWebHostEnvironment env)
         {
@@ -20,6 +24,7 @@
             {
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
