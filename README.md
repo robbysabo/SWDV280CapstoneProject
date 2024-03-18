@@ -1,8 +1,11 @@
 ![Static Badge](https://img.shields.io/badge/Final_Project-red?link=https://cwi.edu) ![Static Badge](https://img.shields.io/badge/localhost-SQL_Server-%23ff9933?style=flat-square&link=https://cwi.edu) ![Static Badge](https://img.shields.io/badge/ASP.NET-blue?link=https://cwi.edu)
-# This mobile application is built with .NET MAUI
-* Demonstrates MVVM functionality
-* Asyncronously reads JSON data
-## The idea is a used car sales shop that wants to display their inventory to a larger audience
-* The owner keeps their data stored on a server, requiring the use of REST web services.
-* He wants to know that when he uploads more cars, that his app will display results efficiently with no risk of breaking the application.
-### My application solves the owner's problem through modern coding practices that are both scalable and performant.
+# This application is brought to you by the software development class of 2024
+## Step-by-step to connect to the RD Gateway
+1. Open the Remote Desktop Connection
+2. Connect to your individual server (i.e ServerD02)
+3. Once connected to your designated server, find Remote Desktop Connection and open it
+4. Go to `Advanced` and click `settings`
+5. On Server name: replace the current cwiinst.com with `SWDV34-LAB20.CWIINST.COM`
+6. Hit `OK`
+7. Go to `General` and insert the same server name into Computer textbox
+8. The username will be `SWDV34-LAB20.CWIINST.COM\student` and password will be the exact same.
