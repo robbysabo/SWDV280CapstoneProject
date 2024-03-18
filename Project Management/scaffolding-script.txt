@@ -1,0 +1,1 @@
+Scaffold-DbContext -Connection name=SPContext -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\DataLayer -DataAnnotations -Force 
