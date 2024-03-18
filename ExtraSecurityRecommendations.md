@@ -112,6 +112,7 @@ public static class RemoveInsecureHeadersMiddlewareExtensions
 // Program.cs
 app.RemoveInsecureHeaders();
 ```
+### In SSMS:
 #### SQL Server's *Encrypt Columns* Feature
 - Right click dbo.Table > Encrypt Columns...
 
