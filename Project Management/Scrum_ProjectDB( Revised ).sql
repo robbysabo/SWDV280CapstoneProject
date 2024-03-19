@@ -10,7 +10,7 @@ CREATE DATABASE ScrumProject
 GO
 
 -- I don't think 'Customers' should have a login, I don't see why if it's an AutoRepair Shop. 
-    -- So, that leaves Administrators & General Managers.
+    -- So, that leaves Technicians, Administrators & General Manager.
 
 
 
