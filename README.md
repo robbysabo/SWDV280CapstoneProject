@@ -4,7 +4,7 @@
 1. Open the Remote Desktop Connection
 2. Connect to your individual server (i.e ServerD02)
 3. Once connected to your designated server, find Remote Desktop Connection and open it
-4. Go to `Advanced` and click `settings`
+4. Go to `Advanced` and click `Settings`
 5. On Server name: replace the current cwiinst.com with `SWDV34-LAB20.CWIINST.COM`
 6. Hit `OK`
 7. Go to `General` and insert the same server name into Computer textbox
