@@ -15,11 +15,11 @@ GO
 
 
 USE ScrumProject
--- UserFullName - SQL QUERY
+
 CREATE TABLE UserTypes (
     UserTypeID INT PRIMARY KEY IDENTITY  NOT NULL,
     Description TEXT NOT NULL
-);
+); -- 'Technician', 'Administrator', 'General Manager'
 
 CREATE TABLE Users (
     UserID INT PRIMARY KEY NOT NULL,
@@ -29,12 +29,11 @@ CREATE TABLE Users (
     Password VARCHAR(50) NOT NULL,
 );
 
--- INSERT INTO AppointmentType VALUES("New Hire", "Customer Service")
+
 CREATE TABLE AppointmentType (
     AppointmentTypeID INT PRIMARY KEY IDENTITY NOT NULL,
-    -- Varchar(n) = string length; Not characters;
     Description TEXT NOT NULL,
-);
+); -- 'New Hire', 'Client'.
 
 
 CREATE TABLE Appointments(
@@ -46,7 +45,7 @@ CREATE TABLE Appointments(
 
 -- Option #1 Depending on how many images we plan on adding, thought having a tag name for a set of photos would make querying images easier.
     -- That is if the plan is to store the image files in SQL VARBINARY.
--- Option #2 Perhaps a Resources Directory in Visual Studio might suffice. Whatever gets us done faster. 
+-- Option #2 Perhaps a Resources Directory in Visual Studio might suffice, Whatever gets us done faster. 
 CREATE TABLE ImageTags(
     ImageTagID INT PRIMARY KEY IDENTITY NOT NULL,
     ImageTag VARCHAR(15) NOT NULL
@@ -67,12 +66,14 @@ CREATE TABLE Jobs (
     ImageID INT NOT NULL,
 );
 
+-- DML Statments --
 GO
 USE ScrumProject;
 
 -- I think having an ImageTags Table would make querying much easier, 
     -- On the other hand, i can't see the sight having too many images. 
     -- Example: Where (i => i.Tag == 'Technician' OR 'General Manager' OR 'Administration')
+
 ALTER TABLE Images  
     ADD ImageTagID INT NOT NULL
     REFERENCES ImageTags(ImageTagID);
@@ -82,16 +83,14 @@ ALTER TABLE Users
     REFERENCES UserTypes(UserTypeID);
 
 INSERT INTO ImageTags (ImageTag)
-VALUES ('Shop/Technician'), ('Administration'), ('Management');
+VALUES ('Technician'), ('Administrator'), ('Manager'), ('Workshop');
 
 INSERT INTO AppointmentType (Description)
-VALUES
-('New Hire'),
-('Client');
+VALUES ('New Hire'), ('Client');
 
 USE ScrumProject;
 INSERT INTO UserTypes (Description) 
-VALUES ( 'Administration');
+VALUES ('Technician'), ( 'Administration'), ('General Manager');
 
 
 
