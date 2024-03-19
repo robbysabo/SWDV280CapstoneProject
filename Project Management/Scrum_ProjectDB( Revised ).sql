@@ -45,7 +45,7 @@ CREATE TABLE Appointments(
 
 -- Option #1 Depending on how many images we plan on adding, thought having a tag name for a set of photos would make querying images easier.
     -- That is if the plan is to store the image files in SQL VARBINARY.
--- Option #2 Perhaps a Resources Directory in Visual Studio might suffice, Whatever gets us done faster. 
+-- Option #2 Perhaps a Resources Directory, then do it HTML style in Visual Studio might suffice,the pictures i think of dont seem confidential. 
 CREATE TABLE ImageTags(
     ImageTagID INT PRIMARY KEY IDENTITY NOT NULL,
     ImageTag VARCHAR(15) NOT NULL
