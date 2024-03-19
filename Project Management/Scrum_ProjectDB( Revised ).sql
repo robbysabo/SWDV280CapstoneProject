@@ -72,7 +72,7 @@ USE ScrumProject;
 
 -- I think having an ImageTags Table would make querying much easier, 
     -- On the other hand, i can't see the sight having too many images. 
-    -- Example: Where (i => i.Tag == 'Technician' OR 'General Manager' OR 'Administration')
+    -- Example psuedocode: Where (i => i.Tag == 'Technician' OR 'General Manager' OR 'Administration')
 
 ALTER TABLE Images  
     ADD ImageTagID INT NOT NULL
