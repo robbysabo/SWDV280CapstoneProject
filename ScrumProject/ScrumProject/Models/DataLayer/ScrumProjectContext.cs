@@ -17,11 +17,17 @@ public partial class ScrumProjectContext : DbContext
 
     public virtual DbSet<Appointment> Appointments { get; set; }
 
+    public virtual DbSet<AppointmentType> AppointmentTypes { get; set; }
+
     public virtual DbSet<Image> Images { get; set; }
+
+    public virtual DbSet<ImageTag> ImageTags { get; set; }
 
     public virtual DbSet<Job> Jobs { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<UserType> UserTypes { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("name=SPContext");
@@ -30,34 +36,53 @@ public partial class ScrumProjectContext : DbContext
     {
         modelBuilder.Entity<Appointment>(entity =>
         {
-            entity.HasKey(e => e.ApptId).HasName("PK__Appointm__E43EE9965759C9F2");
+            entity.HasKey(e => e.AppointmentId).HasName("PK__Appointm__8ECDFCA229F28A39");
 
-            entity.Property(e => e.ApptStat).IsFixedLength();
+            entity.Property(e => e.AppointmentId).ValueGeneratedNever();
+
+            entity.HasOne(d => d.AppointmentType).WithMany(p => p.Appointments)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Appointme__Appoi__3D5E1FD2");
+        });
+
+        modelBuilder.Entity<AppointmentType>(entity =>
+        {
+            entity.HasKey(e => e.AppointmentTypeId).HasName("PK__Appointm__E258530B0ABAC468");
         });
 
         modelBuilder.Entity<Image>(entity =>
         {
-            entity.HasKey(e => e.ImgId).HasName("PK__Images__6F16A71CD161E410");
+            entity.HasKey(e => e.ImageId).HasName("PK__Images__7516F4EC9A160B74");
+
+            entity.HasOne(d => d.ImageTag).WithMany(p => p.Images)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Images__ImageTag__440B1D61");
+        });
+
+        modelBuilder.Entity<ImageTag>(entity =>
+        {
+            entity.HasKey(e => e.ImageTagId).HasName("PK__ImageTag__AE6DABC46D4C5993");
         });
 
         modelBuilder.Entity<Job>(entity =>
         {
-            entity.HasKey(e => e.JobId).HasName("PK__Jobs__6E32B6A56167BAC9");
-
-            entity.HasOne(d => d.Img).WithMany(p => p.Jobs)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Jobs__img_id__3D5E1FD2");
-
-            entity.HasOne(d => d.UIdNavigation).WithMany(p => p.Jobs)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Jobs__u_id__3E52440B");
+            entity.HasKey(e => e.JobId).HasName("PK__Jobs__056690E2B17F3FA7");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UId).HasName("PK__Users__B51D3DEA7BC1645C");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCACDE25724C");
 
-            entity.Property(e => e.UserType).IsFixedLength();
+            entity.Property(e => e.UserId).ValueGeneratedNever();
+
+            entity.HasOne(d => d.UserType).WithMany(p => p.Users)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Users__UserTypeI__44FF419A");
+        });
+
+        modelBuilder.Entity<UserType>(entity =>
+        {
+            entity.HasKey(e => e.UserTypeId).HasName("PK__UserType__40D2D8F69DB50F57");
         });
 
         OnModelCreatingPartial(modelBuilder);

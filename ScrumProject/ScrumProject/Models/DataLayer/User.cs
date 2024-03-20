@@ -9,34 +9,29 @@ namespace ScrumProject.Models.DataLayer;
 public partial class User
 {
     [Key]
-    [Column("u_id")]
-    public int UId { get; set; }
+    [Column("UserID")]
+    public int UserId { get; set; }
 
-    [Column("user_type")]
-    [StringLength(1)]
-    [Unicode(false)]
-    public string UserType { get; set; } = null!;
-
-    [Column("f_name")]
     [StringLength(255)]
     [Unicode(false)]
-    public string FName { get; set; } = null!;
+    public string FirstName { get; set; } = null!;
 
-    [Column("l_name")]
     [StringLength(255)]
     [Unicode(false)]
-    public string LName { get; set; } = null!;
+    public string LastName { get; set; } = null!;
 
-    [Column("email")]
     [StringLength(80)]
     [Unicode(false)]
-    public string? Email { get; set; }
+    public string Email { get; set; } = null!;
 
-    [Column("pass")]
     [StringLength(50)]
     [Unicode(false)]
-    public string Pass { get; set; } = null!;
+    public string Password { get; set; } = null!;
 
-    [InverseProperty("UIdNavigation")]
-    public virtual ICollection<Job> Jobs { get; set; } = new List<Job>();
+    [Column("UserTypeID")]
+    public int UserTypeId { get; set; }
+
+    [ForeignKey("UserTypeId")]
+    [InverseProperty("Users")]
+    public virtual UserType UserType { get; set; } = null!;
 }

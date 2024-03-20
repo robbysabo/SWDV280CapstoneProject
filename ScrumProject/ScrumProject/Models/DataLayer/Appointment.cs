@@ -9,34 +9,16 @@ namespace ScrumProject.Models.DataLayer;
 public partial class Appointment
 {
     [Key]
-    [Column("appt_id")]
-    public int ApptId { get; set; }
+    [Column("AppointmentID")]
+    public int AppointmentId { get; set; }
 
-    [Column("req_date", TypeName = "datetime")]
-    public DateTime ReqDate { get; set; }
+    [Column(TypeName = "datetime")]
+    public DateTime RequestDate { get; set; }
 
-    [Column("type")]
-    [StringLength(255)]
-    [Unicode(false)]
-    public string Type { get; set; } = null!;
+    [Column("AppointmentTypeID")]
+    public int AppointmentTypeId { get; set; }
 
-    [Column("description")]
-    [StringLength(255)]
-    [Unicode(false)]
-    public string Description { get; set; } = null!;
-
-    [Column("contact_email")]
-    [StringLength(80)]
-    [Unicode(false)]
-    public string ContactEmail { get; set; } = null!;
-
-    [Column("contact_phone")]
-    [StringLength(10)]
-    [Unicode(false)]
-    public string ContactPhone { get; set; } = null!;
-
-    [Column("appt_stat")]
-    [StringLength(1)]
-    [Unicode(false)]
-    public string? ApptStat { get; set; }
+    [ForeignKey("AppointmentTypeId")]
+    [InverseProperty("Appointments")]
+    public virtual AppointmentType AppointmentType { get; set; } = null!;
 }
