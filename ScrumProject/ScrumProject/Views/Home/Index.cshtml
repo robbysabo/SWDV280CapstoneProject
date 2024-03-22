@@ -2,7 +2,45 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Home Page</h1>
-    <a asp-controller="Home" asp-action="Privacy">Privacy page</a>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scott's Automotive Homepage</title>
+    <meta name="author" content="SWDV280" />
+    <meta name="description" content="Scott's Automotive is a dedicated and passionate auto repair service with the customer being involved in every step of the process" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <main class="bg-secondary">
+        <div class="text-center">
+            <h1>Auto Repair Services</h1>
+            <h2>Treasure Valley, ID & Nampa, ID</h2>
+            <p>
+                At Scott’s Automotive we understand how important your vehicle is to you, your family or your small business. We are committed and passionate about keeping your vehicle
+                operating efficiently and dependably. Our service to you includes the following practices:
+            </p>
+        </div>
+        <div class="w-100 d-inline-flex justify-content-center">
+            <button type="button" class="btn btn-primary me-3" asp-controller="" asp-action="">Schedule Appointment</button>
+            <button type="button" class="btn btn-primary" asp-controller="" asp-action="">Contact Us</button>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Speed of Service</h3>
+                </div>
+                <div class="col">
+                    <h3>Accuracy and Quality</h3>
+                </div>
+                <div class="col">
+                    <h3>Honesty and Integrity</h3>
+                </div>
+                <div class="col">
+                    <h3>Your Dealership Alternative</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
