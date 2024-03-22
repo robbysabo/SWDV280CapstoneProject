@@ -4105,19 +4105,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mtarpley\\.nuget\\packages\\": {}
+    "C:\\Users\\kbaer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+      "projectUniqueName": "C:\\Users\\kbaer\\Desktop\\SWDVCAPSTONE\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
       "projectName": "ScrumProject",
-      "projectPath": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
-      "packagesPath": "C:\\Users\\mtarpley\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
+      "projectPath": "C:\\Users\\kbaer\\Desktop\\SWDVCAPSTONE\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+      "packagesPath": "C:\\Users\\kbaer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kbaer\\Desktop\\SWDVCAPSTONE\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mtarpley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kbaer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
