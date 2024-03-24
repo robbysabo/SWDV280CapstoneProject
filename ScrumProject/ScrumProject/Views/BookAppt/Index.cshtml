@@ -1,4 +1,5 @@
 ﻿@using ScrumProject.ViewModels;
+@using ScrumProject.Models.DataLayer;
 @model ScrumProject.ViewModels.BookApptViewModel
 
 @*
@@ -9,3 +10,9 @@
 
 <h1>Book Appointment</h1>
 <label for="types" class="form-label">Appt Types</label>
+<select asp-for="@Model.AppointmentTypes" class="form-control" id="types">
+    @foreach(AppointmentType type in Model.AppointmentTypes)
+    {
+        <option value="@type.AppointmentTypeId">@type.Description</option>
+    }
+</select>
