@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {}
+    "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {
+    "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+        "projectUniqueName": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
         "projectName": "ScrumProject",
-        "projectPath": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+        "projectPath": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
         "packagesPath": "C:\\Users\\mtarpley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
+        "outputPath": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mtarpley\\AppData\\Roaming\\NuGet\\NuGet.Config",

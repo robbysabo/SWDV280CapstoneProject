@@ -39,6 +39,7 @@ public partial class ScrumProjectContext : DbContext
             entity.HasKey(e => e.AppointmentId).HasName("PK__Appointm__8ECDFCA229F28A39");
 
             entity.Property(e => e.AppointmentId).ValueGeneratedNever();
+            entity.Property(e => e.ApptStat).IsFixedLength();
 
             entity.HasOne(d => d.AppointmentType).WithMany(p => p.Appointments)
                 .OnDelete(DeleteBehavior.ClientSetNull)
