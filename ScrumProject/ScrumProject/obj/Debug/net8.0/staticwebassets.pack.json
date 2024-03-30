@@ -13,6 +13,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\accuracy.png",
+      "PackagePath": "staticwebassets\\images\\accuracy.png"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\altdealer.png",
+      "PackagePath": "staticwebassets\\images\\altdealer.png"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\ase.svg",
+      "PackagePath": "staticwebassets\\images\\ase.svg"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\autoparts.svg",
+      "PackagePath": "staticwebassets\\images\\autoparts.svg"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\hoonigan.svg",
+      "PackagePath": "staticwebassets\\images\\hoonigan.svg"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\integrity.png",
+      "PackagePath": "staticwebassets\\images\\integrity.png"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\mobil.svg",
+      "PackagePath": "staticwebassets\\images\\mobil.svg"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\napa.svg",
+      "PackagePath": "staticwebassets\\images\\napa.svg"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\rpm.png",
+      "PackagePath": "staticwebassets\\images\\rpm.png"
+    },
+    {
+      "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\tesla.svg",
+      "PackagePath": "staticwebassets\\images\\tesla.svg"
+    },
+    {
       "Id": "C:\\Users\\dream\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

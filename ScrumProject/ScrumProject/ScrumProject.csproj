@@ -15,7 +15,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\images\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\accuracy.png" />
+    <None Include="wwwroot\images\altdealer.png" />
+    <None Include="wwwroot\images\integrity.png" />
+    <None Include="wwwroot\images\rpm.png" />
   </ItemGroup>
 
 </Project>
