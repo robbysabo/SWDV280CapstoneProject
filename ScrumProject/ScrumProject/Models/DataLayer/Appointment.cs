@@ -44,7 +44,5 @@ public partial class Appointment
     [Unicode(false)]
     public string? ApptStat { get; set; }
 
-    [ForeignKey("AppointmentTypeId")]
-    [InverseProperty("Appointments")]
-    public virtual AppointmentType AppointmentType { get; set; } = null!;
+    public virtual AppointmentType? AppointmentType { get; set; } = null!;
 }
