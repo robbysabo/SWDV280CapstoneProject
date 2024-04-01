@@ -18,7 +18,31 @@ public partial class Appointment
     [Column("AppointmentTypeID")]
     public int AppointmentTypeId { get; set; }
 
-    [ForeignKey("AppointmentTypeId")]
-    [InverseProperty("Appointments")]
-    public virtual AppointmentType AppointmentType { get; set; } = null!;
+    [StringLength(255)]
+    [Unicode(false)]
+    public string Description { get; set; } = null!;
+
+    [Column("ContactFName")]
+    [StringLength(255)]
+    [Unicode(false)]
+    public string ContactFname { get; set; } = null!;
+
+    [Column("ContactLName")]
+    [StringLength(255)]
+    [Unicode(false)]
+    public string ContactLname { get; set; } = null!;
+
+    [StringLength(255)]
+    [Unicode(false)]
+    public string ContactEmail { get; set; } = null!;
+
+    [StringLength(10)]
+    [Unicode(false)]
+    public string ContactPhone { get; set; } = null!;
+
+    [StringLength(1)]
+    [Unicode(false)]
+    public string? ApptStat { get; set; }
+
+    public virtual AppointmentType? AppointmentType { get; set; } = null!;
 }
