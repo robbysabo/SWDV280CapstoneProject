@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {}
+    "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {
+    "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+        "projectUniqueName": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
         "projectName": "ScrumProject",
-        "projectPath": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
-        "packagesPath": "C:\\Users\\mtarpley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mtarpley\\Documents\\SWDV280CapstoneProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
+        "projectPath": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+        "packagesPath": "C:\\Users\\Frost\\.nuget\\packages\\",
+        "outputPath": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mtarpley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Frost\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
