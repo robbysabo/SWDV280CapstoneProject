@@ -11,7 +11,7 @@
 8. The username will be `SWDV34-LAB20.CWIINST.COM\student` and password will be the exact same.
 
 # Clean Build Tut
-- Download latest Main
+- Clone the latest Main
 - Go into "../ScrumProject/ScrumProject/"
 - Git Bash "dotnet clean"
 - "dotnet build"
