@@ -15,6 +15,7 @@ namespace ScrumProject.Controllers
             context = ctx;
         }
 
+        //get request for index page
         [HttpGet]
         public IActionResult Index()
         {
@@ -34,6 +35,7 @@ namespace ScrumProject.Controllers
             return View(model);
         }
 
+        //post request for index page
         [HttpPost]
         public IActionResult Index(BookApptViewModel model)
         {
@@ -47,7 +49,7 @@ namespace ScrumProject.Controllers
                 context.Add(model.Appointment); //add to db
                 context.SaveChanges();
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Success");
             }
             else
             {
@@ -69,6 +71,12 @@ namespace ScrumProject.Controllers
                 return View(model);
             }
 
+        }
+
+        //Success page
+        public IActionResult Success()
+        {
+            return View();
         }
     }
 }
