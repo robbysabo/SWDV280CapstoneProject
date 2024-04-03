@@ -9,3 +9,11 @@
 6. Hit `OK`
 7. Go to `General` and insert the same server name into Computer textbox
 8. The username will be `SWDV34-LAB20.CWIINST.COM\student` and password will be the exact same.
+
+# Clean Build Tut
+- Clone the latest Main
+- Go into "../ScrumProject/ScrumProject/"
+- Git Bash "dotnet clean"
+- "dotnet build"
+- Check if it worked, "dotnet run"
+- CTRL + Left-Click, "http://localhost:####"
