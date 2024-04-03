@@ -1,0 +1,91 @@
+﻿@using ScrumProject.ViewModels;
+@using ScrumProject.Models.DataLayer;
+@model ScrumProject.ViewModels.BookApptViewModel
+@{
+    if (TempData["AlertMessage"] != null)
+    {
+        <script>
+            alert('@TempData["AlertMessage"]');
+        </script>
+    }
+}
+
+<div class="container mt-5">
+
+    <h2>Appointment Form</h2>
+    @if(TempData["AlertMessage"] != null) 
+    {
+        <p class="mt-2 text-success">@TempData["AlertMessage"]</p>
+    }
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <form asp-action="Index" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <span class="text-danger">*</span>
+                <input asp-for="@Model.Appointment.ContactFname" type="text" class="form-control" id="firstName">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <span class="text-danger">*</span>
+                <input asp-for="@Model.Appointment.ContactLname" type="text" class="form-control" id="lastName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <span class="text-danger">*</span>
+            <input asp-for="@Model.Appointment.ContactEmail" type="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <span class="text-danger">*</span>
+            <input asp-for="@Model.Appointment.ContactPhone" type="tel" class="form-control" id="phoneNumber">
+        </div>
+
+        <div class="form-group">
+            <label for="requestedDate">Requested Date</label>
+            <span class="text-danger">*</span>
+            <input asp-for="@Model.Appointment.RequestDate" type="date" class="form-control" id="requestedDate">
+        </div>
+
+        <div class="form-group">
+            <label for="types" class="form-label">Appointment Type</label>
+            <span class="text-danger">*</span>
+            <select class="form-select" asp-items="@Model.TypeSelectList" asp-for="@Model.Appointment.AppointmentTypeId">
+                <option value="#" class="text-secondary" selected>---Select type---</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <span class="text-danger">*</span>
+            <textarea asp-for="@Model.Appointment.Description" class="form-control" id="description" rows="3"></textarea>
+        </div>
+
+        <input asp-for="@Model.Appointment.ApptStat" type="hidden">
+        <input asp-for="@Model.Appointment.AppointmentId" type="hidden">
+
+        @if (TempData["AlertMessage"] == null)
+        {
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-secondary mt-2" disabled>Submit</button>
+        }
+    </form>
+</div>
+
+<!--for the date control-->
+<script>
+    //todays date in yyyy-mm-dd format
+    var today = new Date().toISOString().split('T')[0];
+
+    //set request date to today on load
+    document.getElementById('requestedDate').value = today;
+</script>
+

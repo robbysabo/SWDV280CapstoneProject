@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSoLyojEBpgNMK3P4W9XW2g0NiSpYcdMK1qmYU2PY7VrCZgwLkKDu38JFHLZmLBZL2GMJvkUcHJMA1oRYZubBA==",
+  "dgSpecHash": "jGIdxyQPeClqqNp6DSIEPKX0Bk6GSaDPNwvjBMcK6QC7BZKEg8Wqjvfz7fGZww+FECt3a19N4yhekVpYdUcxxQ==",
   "success": true,
-  "projectFilePath": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+  "projectFilePath": "E:\\Software\\Prime\\ScrumProj\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Frost\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Frost\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

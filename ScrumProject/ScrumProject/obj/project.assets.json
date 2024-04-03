@@ -4110,11 +4110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+      "projectUniqueName": "E:\\Software\\Prime\\ScrumProj\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
       "projectName": "ScrumProject",
-      "projectPath": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
+      "projectPath": "E:\\Software\\Prime\\ScrumProj\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ScrumProject.csproj",
       "packagesPath": "C:\\Users\\Frost\\.nuget\\packages\\",
-      "outputPath": "E:\\Software\\Prime\\Scrum\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
+      "outputPath": "E:\\Software\\Prime\\ScrumProj\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Frost\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4178,7 +4178,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
