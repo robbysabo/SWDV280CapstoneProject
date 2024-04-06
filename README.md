@@ -19,5 +19,10 @@
 - CTRL + Left-Click, "http://localhost:####"
 
 ## 6 custom colors added to bootstrap
-They can ONLY be used in 'bg' or 'text' classes
-\textcolor{brown}bg-custom-brown | text-custom-brown
+They can ONLY be used in 'bg' or 'text' classes (examples below)
+1. bg-custom-brown | text-custom-brown
+2. bg-custom-red | text-custom-red
+3. custom-yellow
+4. custom-light
+5. custom-medium
+6. custom-dark
