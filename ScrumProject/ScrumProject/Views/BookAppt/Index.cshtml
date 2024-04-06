@@ -2,6 +2,7 @@
 @using ScrumProject.Models.DataLayer;
 @model ScrumProject.ViewModels.BookApptViewModel
 @{
+    //shows alert on form entry
     if (TempData["AlertMessage"] != null)
     {
         <script>
@@ -13,12 +14,10 @@
 <div class="container mt-5">
 
     <h2>Appointment Form</h2>
-    @if(TempData["AlertMessage"] != null) 
-    {
-        <p class="mt-2 text-success">@TempData["AlertMessage"]</p>
-    }
+    <!--validation message-->
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+    <!--Appointment entry form-->
     <form asp-action="Index" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -69,14 +68,7 @@
         <input asp-for="@Model.Appointment.ApptStat" type="hidden">
         <input asp-for="@Model.Appointment.AppointmentId" type="hidden">
 
-        @if (TempData["AlertMessage"] == null)
-        {
-            <button type="submit" class="btn btn-primary mt-2">Submit</button>
-        }
-        else
-        {
-            <button type="submit" class="btn btn-secondary mt-2" disabled>Submit</button>
-        }
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
     </form>
 </div>
 
