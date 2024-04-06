@@ -17,3 +17,7 @@
 - "dotnet build"
 - Check if it worked, "dotnet run"
 - CTRL + Left-Click, "http://localhost:####"
+
+## 6 custom colors added to bootstrap
+They can ONLY be used in 'bg' or 'text' classes
+\textcolor{brown}bg-custom-brown | text-custom-brown
