@@ -2,13 +2,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-<<<<<<< HEAD
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a asp-action="Index" asp-controller="BookAppt">Book Appointment</a>
-</div>
-=======
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,8 +22,8 @@
             </p>
         </div>
         <div class="w-100 d-inline-flex justify-content-center mb-5">
-            <button type="button" class="btn btn-primary me-3" asp-controller="" asp-action="">Schedule Appointment</button>
-            <button type="button" class="btn btn-primary" asp-controller="" asp-action="">Contact Us</button>
+            <button type="button" class="btn btn-primary me-3" asp-controller="BookAppt" asp-action="Index">Schedule Appointment</button>
+            <button type="button" class="btn btn-primary" asp-controller="Contact" asp-action="Index">Contact Us</button>
         </div>
         <section class="container-fluid text-center mb-5">
             <div class="row row-cols-2 row-cols-lg-4 g-4">
@@ -146,4 +139,3 @@
     </main>
 </body>
 </html>
->>>>>>> main
