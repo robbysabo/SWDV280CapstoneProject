@@ -1,53 +1,49 @@
-
+@model ScrumProject.ViewModels.ContactViewModel;
 
 @{
     ViewData["Title"] = "Contact Us";
 }
 
-<!-- Login part -->
-<div class="d-flex justify-content-end">
-    <div class="row">
-        <div class="col text-center">
-            <h2>Login</h2>
-            <p>Click here to Login</p>
-            <button class="btn btn-primary p-1">Login</button>
-        </div>
-    </div>
+<div class="row text-center mb-3 mt-5">
+    <h1>Let us know how we may assist you</h1>
 </div>
 
 <div class="row text-center">
     <!-- Contact Information -->
     <div class="col-md-6">
-        <h2>Contact Information</h2>
-        <h4>Directions: West Royal Blvd 313, Boise ID</h4>
+        <h2 class="mb-2">Contact Information</h2>
+        <h4 class="mb-3">Directions: West Royal Blvd 313, Boise ID</h4>
         <img class="border w-75 img-fluid" src="location.png" alt="Location">
-        <!-- Still need to add more contact info here, placeholder for now -->
-        <p class="pt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quae voluptate dicta sequi labore necessitatibus numquam doloribus. Animi, dolor officia voluptate voluptatibus repudiandae unde autem obcaecati provident incidunt suscipit alias est.
-        </p>
+        <div class="d-flex justify-content-center mt-3">
+            <p class="w-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quae voluptate dicta sequi labore necessitatibus numquam doloribus. Animi, dolor officia voluptate voluptatibus repudiandae unde autem obcaecati provident incidunt suscipit alias est.
+            </p>
+        </div>
     </div>
 
     <!-- Contact Form -->
     <div class="col-md-6">
-        <h2 class="pb-3">Contact Us</h2>
+        <h2 class="mb-2">Contact Us</h2>
         <p>
             Fill out the form & a member from our team will reach back to you within 24 hours.
         </p>
 
-        <form class="border p-3" asp-controller="Contact" asp-action="Send" method="post">
+        <form class="border p-3" asp-controller="Contact" asp-action="Index" method="post">
             <!-- First & Last Name -->
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="pb-1">First Name</label>
-                        <input class="form-control" placeholder="First">
+                        <label for="FirstName" class="pb-1">First Name</label>
+                        <input class="form-control" asp-for="FirstName" placeholder="First">
+                        <span class="text-danger" asp-validation-for="FirstName"></span>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="pb-1">Last Name</label>
-                        <input class="form-control" placeholder="Last">
+                        <label for="LastName" class="pb-1">Last Name</label>
+                        <input class="form-control" asp-for="LastName" placeholder="Last">
+                        <span class="text-danger" asp-validation-for="LastName"></span>
                     </div>
                 </div>
             </div>
@@ -56,8 +52,9 @@
             <div class="row pt-2">
                 <div class="col">
                     <div class="form-group">
-                        <label class="pb-1">Email</label>
-                        <input type="email" class="form-control" placeholder="Email">
+                        <label for="Email" class="pb-1">Email</label>
+                        <input class="form-control" asp-for="Email" placeholder="Email">
+                        <span class="text-danger" asp-validation-for="Email"></span>
                     </div>
                 </div>
             </div>
@@ -66,8 +63,8 @@
             <div class="row pt-2">
                 <div class="col">
                     <div class="form-group">
-                        <label for="options" class="pb-1">Subject</label>
-                        <select class="form-control" name="options">
+                        <label for="Subject" class="pb-1">Subject</label>
+                        <select class="form-control" asp-for="Subject">
                             <option value="" disabled selected>Select an option</option>
                             <option value="general">General</option>
                             <option value="sales">Sales</option>
@@ -75,6 +72,7 @@
                             <option value="feedback">Feedback</option>
                             <option value="other">Other</option>
                         </select>
+                        <span class="text-danger" asp-validation-for="Subject"></span>
                     </div>
                 </div>
             </div>
@@ -82,18 +80,16 @@
             <!-- Comment -->
             <div class="row pt-2">
                 <div class="col">
-                    <label for="message" class="pb-1">Message</label>
-                    <textarea class="form-control" name="message" rows="6" placeholder="Write message..."></textarea>
+                    <label for="Message" class="pb-1">Message</label>
+                    <textarea class="form-control" asp-for="Message" rows="6" placeholder="Write message..."></textarea>
+                    <span class="text-danger" asp-validation-for="Message"></span>
                 </div>
             </div>
 
             <!-- Submit -->
             <div class="text-center mt-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
             </div>
         </form>
     </div>
 </div>
-
-
-
