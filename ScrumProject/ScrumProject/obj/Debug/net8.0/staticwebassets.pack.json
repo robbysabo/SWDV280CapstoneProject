@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\forms\\InsuranceVerification.pdf",
+      "PackagePath": "staticwebassets\\forms\\InsuranceVerification.pdf"
+    },
+    {
+      "Id": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\forms\\ReleaseLiability.pdf",
+      "PackagePath": "staticwebassets\\forms\\ReleaseLiability.pdf"
+    },
+    {
+      "Id": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\forms\\RepairAuthorization.pdf",
+      "PackagePath": "staticwebassets\\forms\\RepairAuthorization.pdf"
+    },
+    {
       "Id": "C:\\Users\\mtarpley\\Documents\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\images\\accuracy.png",
       "PackagePath": "staticwebassets\\images\\accuracy.png"
     },
