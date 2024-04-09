@@ -3,16 +3,20 @@ using ScrumProject.Models;
 using ScrumProject.Models.DataLayer;
 using ScrumProject.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using ScrumProject.Models.DataAccess;
 
 namespace ScrumProject.Controllers
 {
     public class BookApptController : Controller
     {
-        //setting up db context
-        private ScrumProjectContext context { get; set; }
+        //dependency injection
+        private Repository<Appointment> appt { get; set; }
+        private Repository<AppointmentType> apptType { get; set; }
+
         public BookApptController(ScrumProjectContext ctx) 
         {
-            context = ctx;
+            appt = new Repository<Appointment>(ctx);
+            apptType = new Repository<AppointmentType>(ctx);
         }
 
         //get request for index page
@@ -21,7 +25,7 @@ namespace ScrumProject.Controllers
         {
             //instantiate vm, populate types
             BookApptViewModel model = new BookApptViewModel();
-            model.AppointmentTypes = context.AppointmentTypes.ToList();
+            model.AppointmentTypes = apptType.List(new QueryOptions<AppointmentType> {OrderBy = a => a.AppointmentTypeId }).ToList();
 
             //use types to create select list items
             foreach (var type in model.AppointmentTypes)
@@ -44,10 +48,8 @@ namespace ScrumProject.Controllers
                 model.Appointment.AppointmentType = model.SelectedAppointmentType; //set appointment type
                 model.Appointment.ApptStat = " "; //set open appointment status
 
-                TempData["AlertMessage"] = "Appointment request received. Someone from our team will contact you shortly."; //success message
-
-                context.Add(model.Appointment); //add to db
-                context.SaveChanges();
+                appt.Insert(model.Appointment);
+                appt.Save();
 
                 return RedirectToAction("Success");
             }
@@ -57,7 +59,7 @@ namespace ScrumProject.Controllers
                 ModelState.AddModelError("", "All fields required.");
 
                 //instantiate vm, populate types
-                model.AppointmentTypes = context.AppointmentTypes.ToList();
+                model.AppointmentTypes = apptType.List(new QueryOptions<AppointmentType> { OrderBy = a => a.AppointmentTypeId }).ToList();
 
                 //use types to create select list items
                 foreach (var type in model.AppointmentTypes)

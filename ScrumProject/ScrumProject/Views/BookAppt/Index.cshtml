@@ -1,15 +1,6 @@
 ﻿@using ScrumProject.ViewModels;
 @using ScrumProject.Models.DataLayer;
 @model ScrumProject.ViewModels.BookApptViewModel
-@{
-    //shows alert on form entry
-    if (TempData["AlertMessage"] != null)
-    {
-        <script>
-            alert('@TempData["AlertMessage"]');
-        </script>
-    }
-}
 
 <div class="container mt-5">
 
