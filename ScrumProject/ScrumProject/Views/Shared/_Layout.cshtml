@@ -10,29 +10,38 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light navbar-expand-lg bg-custom-red">
+        <nav class="navbar navbar-light navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand text-black" asp-controller="Home" asp-action="Index">Logo</a>
+                <a class="navbar-brand text-black" href="#">Logo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navItems">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-black" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                            <a class="nav-link text-black" aria-current="page" href="#">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews">Reviews</a>
+                            <a class="nav-link text-black" aria-current="page" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index">Book Appointment</a>
+                            <a class="nav-link text-black" aria-current="page" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
                         </li>
                     </ul>
-                    <a class="btn btn-outline-dark me-2" role="button">Log In</a>
-                    <a class="btn btn-outline-dark" role="button">Sign Up</a>
+                    <button class="btn btn-outline-dark me-2" type="button">Log In</button>
+                    <button class="btn btn-outline-dark" type="button">Sign Up</button>
                 </div>
             </div>
         </nav>
