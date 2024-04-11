@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/css/admin.css">
+
+
+<h1>Admin Page</h1>
+
+<button class="btn btn-primary" onclick="showEditOverlay()">Edit</button>
+<button class="btn btn-success" onclick="showNewUserOverlay()">New User</button>
+
+<!-- Overlay for Edit -->
+<div id="editOverlay" class="overlay">
+    <div class="overlay-content">
+        <span class="close-btn" onclick="hideOverlay()">&times;</span>
+        <!-- Your edit form content here -->
+        Edit Form
+    </div>
+</div>
+
+<!-- Overlay for New User -->
+<div id="newUserOverlay" class="overlay">
+    <div class="overlay-content">
+        <span class="close-btn" onclick="hideOverlay()">&times;</span>
+        <!-- Your new user form content here -->
+        New User Form
+    </div>
+</div>
+
+<script src="~/js/admin.js"></script>
