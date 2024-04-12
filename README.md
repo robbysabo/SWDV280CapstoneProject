@@ -18,11 +18,13 @@
 - Check if it worked, "dotnet run"
 - CTRL + Left-Click, "http://localhost:####"
 
-## 6 custom colors added to bootstrap
-They can ONLY be used in 'bg' or 'text' classes (examples below)
-1. bg-custom-brown | text-custom-brown
+## Custom colors are added to bootstrap (Their respective hex & rgb colors can be found in bootstrap.css :root)
+They can ONLY be used in 'bg' or 'text' classes
+1. bg-custom-sage
 2. bg-custom-red | text-custom-red
-3. custom-yellow
-4. custom-light
-5. custom-medium
-6. custom-dark
+3. bg-custom-light | text-custom-light
+4. bg-custom-medium | text-custom-medium
+5. bg-custom-dark | text-custom-dark
+6. bg-green-light
+7. bg-green-medium
+8. bg-green-dark
