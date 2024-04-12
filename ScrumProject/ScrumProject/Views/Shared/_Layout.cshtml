@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using ScrumProject.Models.DataLayer;
+@using ScrumProject.Models.Helper;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -15,13 +18,65 @@
     <header class="mb-5">
         <nav class="navbar fixed-top navbar-expand-lg bg-custom-sage shadow-sm navbar-dark">
             <div class="container-fluid">
+<<<<<<< HEAD
+                <a class="navbar-brand text-black" asp-controller="Home" asp-action="Index" asp-area="">Logo</a>
+=======
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">Logo</a>
+>>>>>>> main
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navItems">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+<<<<<<< HEAD
+                            <a class="nav-link active text-black" aria-current="page" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" aria-current="page" asp-controller="Contact" asp-action="Index" asp-area="">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews" asp-area="">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index" asp-area="">Book Appointment</a>
+                        </li>
+                    </ul>
+                    <!-- Identity Sign In/Out and Register -->
+                    @using Microsoft.AspNetCore.Identity
+                    @inject SignInManager<AuthUser> signInManager
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <!-- Signed in user - logout and username -->
+                            <li class="nav-item">
+                                <form method="post" asp-action="LogOut" asp-controller="Account" asp-area="">
+                                    <button type="submit" class="btn btn-outline-dark me-2">Logout</button>
+                                </form>
+                            </li>
+                            <li class="nav-item text-light mt-1">@User.Identity.Name</li>
+                        }
+                        else
+                        {
+                            var action = ViewContext.RouteData.Values["Action"]?.ToString(); //get route data
+
+                            <!-- Anonymous user -->
+                            <li class="nav-item @Nav.Active("Register", action)">
+                                <a asp-action="Register" asp-controller="Account" asp-area="" class="btn btn-outline-dark me-2">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Login" asp-controller="Account" asp-area="" class="btn btn-outline-dark me-2">Log In</a>
+                            </li>
+                        }
+
+                        <!-- Add Admin link -->
+                        <li class="nav-item">
+                            <a asp-action="Index" asp-controller="User" asp-area="Admin" class="nav-link">Admin</a>
+                        </li>
+                    </ul>
+
+=======
                             <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
