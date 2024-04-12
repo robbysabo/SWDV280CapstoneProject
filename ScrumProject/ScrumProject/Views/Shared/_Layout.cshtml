@@ -1,38 +1,110 @@
-﻿<!DOCTYPE html>
+﻿@using ScrumProject.Models.DataLayer;
+@using ScrumProject.Models.Helper;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ScrumProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ScrumProject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/overwrite.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-light navbar-expand-lg bg-custom-red">
+    <header class="mb-5">
+        <nav class="navbar fixed-top navbar-expand-lg bg-custom-sage shadow-sm navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand text-black" asp-controller="Home" asp-action="Index">Logo</a>
+<<<<<<< HEAD
+                <a class="navbar-brand text-black" asp-controller="Home" asp-action="Index" asp-area="">Logo</a>
+=======
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Logo</a>
+>>>>>>> main
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navItems">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-black" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+<<<<<<< HEAD
+                            <a class="nav-link active text-black" aria-current="page" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                            <a class="nav-link text-black" aria-current="page" asp-controller="Contact" asp-action="Index" asp-area="">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews">Reviews</a>
+                            <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews" asp-area="">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index">Book Appointment</a>
+                            <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index" asp-area="">Book Appointment</a>
                         </li>
                     </ul>
-                    <a class="btn btn-outline-dark me-2" role="button">Log In</a>
+                    <!-- Identity Sign In/Out and Register -->
+                    @using Microsoft.AspNetCore.Identity
+                    @inject SignInManager<AuthUser> signInManager
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <!-- Signed in user - logout and username -->
+                            <li class="nav-item">
+                                <form method="post" asp-action="LogOut" asp-controller="Account" asp-area="">
+                                    <button type="submit" class="btn btn-outline-dark me-2">Logout</button>
+                                </form>
+                            </li>
+                            <li class="nav-item text-light mt-1">@User.Identity.Name</li>
+                        }
+                        else
+                        {
+                            var action = ViewContext.RouteData.Values["Action"]?.ToString(); //get route data
+
+                            <!-- Anonymous user -->
+                            <li class="nav-item @Nav.Active("Register", action)">
+                                <a asp-action="Register" asp-controller="Account" asp-area="" class="btn btn-outline-dark me-2">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Login" asp-controller="Account" asp-area="" class="btn btn-outline-dark me-2">Log In</a>
+                            </li>
+                        }
+
+                        <!-- Add Admin link -->
+                        <li class="nav-item">
+                            <a asp-action="Index" asp-controller="User" asp-area="Admin" class="nav-link">Admin</a>
+                        </li>
+                    </ul>
+
+=======
+                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+<<<<<<< HEAD
+                             <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index">Book Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                        </li>
+                    </ul>
+                      <a class="btn btn-outline-dark me-2" role="button">Log In</a>
                     <a class="btn btn-outline-dark" role="button">Sign Up</a>
+=======
+                            <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" asp-controller="BookAppt" asp-action="Index">Book Appointment</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-light text-custom-dark me-2" role="button">Log In</a>
+                    <a class="btn btn-light text-custom-dark" role="button">Sign Up</a>
+>>>>>>> main
                 </div>
             </div>
         </nav>
@@ -43,14 +115,103 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - ScrumProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="text-center text-lg-start text-custom-light">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Scott's Automotive
+                        </h6>
+                        <p>
+                            We are committed and passionate about keeping your vehicle
+                            operating efficiently and dependably.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a asp-controller="Home" asp-action="Index" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a asp-controller="Contact" asp-action="Index" class="text-reset">Contact Us</a>
+                        </p>
+                        <p>
+                            <a asp-controller="Home" asp-action="Reviews" class="text-reset">Reviews</a>
+                        </p>
+                        <p>
+                            <a asp-controller="BookAppt" asp-action="Index" class="text-reset">Book An Appointment</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Nampa, ID 83653, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Class of 2024</a>
         </div>
+        <!-- Copyright -->
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
