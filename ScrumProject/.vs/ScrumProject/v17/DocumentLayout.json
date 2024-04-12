@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\bdeaton\\desktop\\scrumproject\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\css\\overwrite.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\wwwroot\\css\\overwrite.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\bdeaton\\desktop\\scrumproject\\swdv280capstoneproject\\scrumproject\\scrumproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -34,15 +30,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\bdeaton\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ScrumProject\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\bdeaton\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ScrumProject\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-11T01:33:52.94Z"
+              "WhenOpened": "2024-04-12T19:18:00.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,22 +49,10 @@
               "RelativeDocumentMoniker": "ScrumProject\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\bdeaton\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ScrumProject\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGYAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-10T17:31:20.741Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "overwrite.css",
-              "DocumentMoniker": "C:\\Users\\bdeaton\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\css\\overwrite.css",
-              "RelativeDocumentMoniker": "ScrumProject\\wwwroot\\css\\overwrite.css",
-              "ToolTip": "C:\\Users\\bdeaton\\Desktop\\ScrumProject\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\css\\overwrite.css",
-              "RelativeToolTip": "ScrumProject\\wwwroot\\css\\overwrite.css",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-09T17:10:30.519Z"
             }
           ]
         }
