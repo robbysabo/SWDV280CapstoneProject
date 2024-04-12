@@ -11,130 +11,133 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body class="bg-custom-sage">
     <main>
-        <div class="container-fluid text-center mb-5">
-            <h1>Auto Repair Services</h1>
-            <h2>Treasure Valley, ID & Nampa, ID</h2>
-            <p>
-                At Scott’s Automotive we understand how important your vehicle is to you, your family or your small business. We are committed and passionate about keeping your vehicle
-                operating efficiently and dependably. Our service to you includes the following practices:
-            </p>
-        </div>
-        <div class="w-100 d-inline-flex justify-content-center mb-5">
-            <a class="btn btn-primary me-3" asp-controller="BookAppt" asp-action="Index">Schedule Appointment</a>
-            <a class="btn btn-primary" asp-controller="Contact" asp-action="Index">Contact Us</a>
-        </div>
-        <section class="container-fluid text-center mb-5">
-            <div class="row row-cols-2 row-cols-lg-4 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="~/images/rpm.png">
-                        <div class="card-body">
-                            <h3 class="card-title">Speed of Service</h3>
+        <section class ="container-fluid text-center d-flex justify-content-center align-items-center mb-5">
+            <div class="custom-rounded rounded-top bg-mechanic shadow">
+                 <h1 class="mt-5 display-3">Scott's Auto Repair Services</h1>
+                 <h2 class="display-6">Treasure Valley, ID</h2>
+                 <p class="w-75 mx-auto mt-5 lead">
+                     At Scott’s Automotive we understand how important your vehicle is to you, your family or your small business. We are committed and passionate about keeping your vehicle
+                     operating efficiently and dependably. Our service to you includes the following practices:
+                 </p>
+                 <div class="my-5">
+                     <a class="btn btn-light btn-rounded me-3" asp-controller="BookAppt" asp-action="Index">Schedule Appointment</a>
+                     <a class="btn btn-light btn-rounded" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                 </div>
+            </div>
+        </section>
+        <section class="container-fluid d-flex justify-content-center align-items-center text-center my-5">
+            <div class="bg-custom-light custom-rounded bg-opacity-75 p-5 shadow">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-3">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="~/images/rpm.png">
+                            <div class="card-body">
+                                <h3 class="card-title">Speed of Service</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="~/images/accuracy.png">
+                            <div class="card-body">
+                                <h3 class="card-title">Accuracy and Quality</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="~/images/integrity.png">
+                            <div class="card-body">
+                                <h3 class="card-title">Honesty and Integrity</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="~/images/altdealer.png">
+                            <div class="card-body">
+                                <h3 class="card-title">Your Dealership Alternative</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="~/images/accuracy.png">
-                        <div class="card-body">
-                            <h3 class="card-title">Accuracy and Quality</h3>
-                        </div>
+                <div class="row row-cols-1 row-cols-lg-3 d-flex justify-content-between bg-light-to-md custom-rounded my-3 p-5 shadow">
+                    <div class="col">
+                        <h4 class="text-center text-decoration-underline">Collision Repair Services</h4>
+                        <ul class="list-unstyled">
+                            <li>Windshield Repair</li>
+                            <li>Auto Glass Repair</li>
+                            <li>Paintless Dent Removal</li>
+                            <li>Computer Diagnostics</li>
+                            <li>Hail Damage Repair</li>
+                            <li>Fender Repair</li>
+                            <li>Calibration Services</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-center text-decoration-underline">Painting Services</h4>
+                        <ul class="list-unstyled">
+                            <li>Electro-dip</li>
+                            <li>Top-Coat</li>
+                            <li>Sealant</li>
+                            <li>Paint Repair</li>
+                            <li>Fleet Services</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-center text-decoration-underline">Specialty Painting</h4>
+                        <ul class="list-unstyled">
+                            <li>Chrome</li>
+                            <li>Pearlescent</li>
+                            <li>Metallic</li>
+                            <li>Matte</li>
+                            <li>Custom</li>
+                            <li>Vinyl Wrapping</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="~/images/integrity.png">
-                        <div class="card-body">
-                            <h3 class="card-title">Honesty and Integrity</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="~/images/altdealer.png">
-                        <div class="card-body">
-                            <h3 class="card-title">Your Dealership Alternative</h3>
-                        </div>
-                    </div>
+                <div class="w-100 d-inline-flex justify-content-center mt-3">
+                    <a class="btn btn-light btn-rounded me-3" asp-controller="BookAppt" asp-action="Index">Schedule Appointment</a>
+                    <a class="btn btn-light btn-rounded" asp-controller="Contact" asp-action="Index">Contact Us</a>
                 </div>
             </div>
         </section>
-        <section class="container-fluid">
-            <div class="row d-flex justify-content-between">
-                <div class="col">
-                    <h4 class="text-center text-decoration-underline">Collision Repair Services</h4>
-                    <ul>
-                        <li>Windshield Repair</li>
-                        <li>Auto Glass Repair</li>
-                        <li>Paintless Dent Removal</li>
-                        <li>Computer Diagnostics</li>
-                        <li>Hail Damage Repair</li>
-                        <li>Fender Repair</li>
-                        <li>Calibration Services</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="text-center text-decoration-underline">Painting Services</h4>
-                    <ul>
-                        <li>Electro-dip</li>
-                        <li>Top-Coat</li>
-                        <li>Sealant</li>
-                        <li>Paint Repair</li>
-                        <li>Fleet Services</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="text-center text-decoration-underline">Specialty Painting</h4>
-                    <ul>
-                        <li>Chrome</li>
-                        <li>Pearlescent</li>
-                        <li>Metallic</li>
-                        <li>Matte</li>
-                        <li>Custom</li>
-                        <li>Vinyl Wrapping</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <div class="w-100 d-inline-flex justify-content-center mb-5">
-            <a class="btn btn-primary me-3" asp-controller="BookAppt" asp-action="Index">Schedule Appointment</a>
-            <a class="btn btn-primary" asp-controller="Contact" asp-action="Index">Contact Us</a>
-        </div>
-        <section class="container-fluid">
-            <div class="row row-cols-3 row-cols-md-6 g-5 d-flex align-items-center">
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="~/images/hoonigan.svg" class="card-img mt-4" />
+        
+        <section class="container-fluid d-flex justify-content-center align-items-center my-5">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+                    <div class="col">
+                        <div class="custom-card">
+                            <img src="~/images/hoonigan.svg" class="mx-auto mt-4" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-card">
+                            <img src="~/images/ac-racing.svg" class="w-50 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-card">
+                            <img src="~/images/mobil.svg" class="w-50 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-card">
+                            <img src="~/images/ducati.svg" class="w-50 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-card">
+                            <img src="~/images/bos-suspension.svg" class="w-50 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-card">
+                            <img src="~/images/autoparts.svg" class="w-50 mx-auto" />
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="~/images/tesla.svg" class="card-img" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="~/images/mobil.svg" class="card-img" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="~/images/ase.svg" class="card-img" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="~/images/napa.svg" class="card-img" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="~/images/autoparts.svg" class="card-img" />
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 </body>

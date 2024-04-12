@@ -1,0 +1,34 @@
+﻿.bg-lin-red-to-light {
+    background: linear-gradient(var(--cust-red), var(--cust-light));
+}
+
+.bg-lin-md-middle {
+    background: linear-gradient(var(--cust-light),var(--cust-medium), var(--cust-light));
+}
+
+.bg-lin-light-middle {
+    background: linear-gradient(var(--cust-medium), var(--cust-light), var(--cust-medium));
+}
+
+.bg-lin-red-sage {
+    background: linear-gradient(var(--cust-red), var(--cust-sage));
+}
+
+.bg-mechanic {
+    background: linear-gradient(rgba(var(--cust-light-rgb), 0.9), rgba(var(--cust-sage-rgb), 0.4)), url(/images/pouringoil.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.bg-light-to-md {
+    background: linear-gradient(var(--cust-light), var(--cust-medium));
+}
+
+.custom-rounded {
+    border-radius: 25px;
+}
+
+.custom-card {
+    display: flex;
+    height: 150px;
+    width: 200px;
+}
