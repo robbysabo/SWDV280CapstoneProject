@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
 }
@@ -13,12 +19,8 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
+    position: relative;
+    min-height: 100%;
 }
 
 textarea {
