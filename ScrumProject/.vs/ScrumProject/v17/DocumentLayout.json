@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,14 +20,27 @@
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\models\\datalayer\\scrumprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\models\\datalayer\\scrumprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\models\\datalayer\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\models\\datalayer\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\models\\datalayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\models\\datalayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\viewmodels\\admin\\adminadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\viewmodels\\admin\\adminadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\viewmodels\\bookapptviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\viewmodels\\bookapptviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,6 +51,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\controllers\\bookapptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\controllers\\bookapptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< Updated upstream
     },
     {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -45,6 +60,8 @@
     {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+=======
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -54,6 +71,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -67,10 +85,39 @@
               "ViewState": "AQIAAC8AAAAAAAAAAAAswDkAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T04:37:32.506Z",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScrumProjectContext.cs",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "RelativeDocumentMoniker": "ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "RelativeToolTip": "ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAswDkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T04:37:32.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\User.cs",
+              "RelativeDocumentMoniker": "ScrumProject\\Models\\DataLayer\\User.cs",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\User.cs",
+              "RelativeToolTip": "ScrumProject\\Models\\DataLayer\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T02:16:31.378Z",
+>>>>>>> Stashed changes
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\User.cs",
@@ -85,6 +132,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\UserType.cs",
               "RelativeDocumentMoniker": "ScrumProject\\Models\\DataLayer\\UserType.cs",
@@ -94,6 +144,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T02:05:34.07Z",
               "EditorCaption": ""
+<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -120,6 +171,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T18:55:52.434Z",
               "EditorCaption": ""
+=======
+>>>>>>> Stashed changes
             }
           ]
         }
@@ -140,6 +193,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -184,6 +238,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "BookApptViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ViewModels\\BookApptViewModel.cs",
               "RelativeDocumentMoniker": "ScrumProject\\ViewModels\\BookApptViewModel.cs",
@@ -196,7 +257,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "BookApptController.cs",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\BookApptController.cs",
               "RelativeDocumentMoniker": "ScrumProject\\Controllers\\BookApptController.cs",
@@ -209,7 +274,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\BookAppt\\Index.cshtml",
               "RelativeDocumentMoniker": "ScrumProject\\Views\\BookAppt\\Index.cshtml",
