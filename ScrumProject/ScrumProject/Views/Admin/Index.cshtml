@@ -1,0 +1,72 @@
+﻿@using ScrumProject.ViewModels;
+@using ScrumProject.Models.DataLayer;
+@model ScrumProject.ViewModels.Admin.AdminAdd
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/css/admin.css">
+
+
+<h1>Admin Page</h1>
+
+<button class="btn btn-primary" onclick="showEditOverlay()">Edit</button>
+<button class="btn btn-success" onclick="showNewUserOverlay()">New User</button>
+
+<!-- Overlay for Edit -->
+<div id="editOverlay" class="overlay">
+    <div class="overlay-content">
+        <span class="close-btn" onclick="hideOverlay()">&times;</span>
+        <!-- Your edit form content here -->
+        Edit Form
+    </div>
+</div>
+
+<!-- Overlay for New User -->
+<div id="newUserOverlay" class="overlay">
+    <div class="overlay-content">
+        <h1>New User Form</h1>
+        <span class="close-btn" onclick="hideOverlay()">&times;</span>
+        <form asp-action="adder" method="post" id="userForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <span class="text-danger">*</span>
+                    <input asp-for="@Model.UserData.FirstName" type="text" class="form-control" id="firstName" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <span class="text-danger">*</span>
+                    <input asp-for="@Model.UserData.LastName" type="text" class="form-control" id="lastName" required>
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <span class="text-danger">*</span>
+                <input asp-for="@Model.UserData.Email" type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <span class="text-danger">*</span>
+                <input asp-for="@Model.UserData.Password" type="password" class="form-control" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="usertype">usertype</label>
+                <span class="text-danger">*</span>
+                <input asp-for="@Model.UserData.UserTypeId" type="number" class="form-control" id="usertype">
+                 <!---<input asp-for="Model.UserData.UserType.UserTypeId" type="number" class="form-control" id="usertype" >
+                <input asp-for="Model.UserData.UserType.Description" type="text" class="form-control" id="usertype2">-->
+            </div>
+             
+
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+        
+    </div>
+</div>
+
+<script src="~/js/admin.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>

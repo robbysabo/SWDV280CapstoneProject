@@ -69,7 +69,7 @@ public partial class ScrumProjectContext : IdentityDbContext<AuthUser>
         {
             entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCACDE25724C");
 
-            entity.Property(e => e.UserId).ValueGeneratedNever();
+           entity.Property(e => e.UserId).ValueGeneratedOnAdd();
 
             entity.HasOne(d => d.UserType).WithMany(p => p.Users)
                 .OnDelete(DeleteBehavior.ClientSetNull)
