@@ -17,3 +17,25 @@ function hideOverlay() {
     editOverlay.style.display = "none";
     newUserOverlay.style.display = "none";
 }
+
+userForm.addEventListener("submit", function (event) {
+    //var actionUrl = '@Url.Action("adder","Admin/Admin")';
+    event.preventDefault(); // Prevent default form submission
+    if (!userForm.checkValidity()) {
+        // Form is invalid, do not proceed with submission
+        return;
+    }
+    // Serialize form data
+    var formData = $("#userForm").serialize();
+
+    // Send form data via AJAX
+    $.ajax({
+        type: "POST",
+        url: 'admin/adder',
+        
+        data: formData,
+        
+        success: function (recData) { alert('Success'); },
+        error: function (status, error) { alert(status + error)}
+    });
+});

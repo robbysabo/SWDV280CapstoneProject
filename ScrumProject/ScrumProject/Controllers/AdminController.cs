@@ -1,83 +1,56 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Identity.Client;
+using ScrumProject.Models.DataAccess;
+using ScrumProject.Models.DataLayer;
+using ScrumProject.ViewModels;
+using ScrumProject.ViewModels.Admin;
 
 namespace ScrumProject.Controllers
 {
     public class AdminController : Controller
     {
+        private Repository<User> dbt_user { get; set; }
+        private Repository<UserType> dbt_usertype { get; set; }
+
+        public AdminController(ScrumProjectContext ctx)
+        {
+            dbt_user = new Repository<User>(ctx);
+            dbt_usertype = new Repository<UserType>(ctx);
+        }
         // GET: HomeController1
         public ActionResult Index()
         {
+            
             return View();
         }
 
-        // GET: HomeController1/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: HomeController1/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Create
+ 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+        public ActionResult adder(AdminAdd model) {
+
+            string value = dbt_usertype.Get(1).Description;
+            //model.UserData.UserType.Description = value;
+            //queryresult = 
+            //model.UserData.UserType = model.UserType;
+            //model.UserData.UserType.Description = temp;
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
+                
+                
+                dbt_user.Insert(model.UserData);
+                Console.WriteLine("valid");
+                dbt_user.Save();
                 return View();
             }
-        }
-
-        // GET: HomeController1/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
+            else
             {
-                return RedirectToAction(nameof(Index));
+                ModelState.AddModelError("", "All fields required.");
+                return Content("<script>" + "alert(\"Something has gone very wrong, we are sending you to the void to think about your sins\")" + "</script>", "text/html");
             }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: HomeController1/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            
         }
     }
 }

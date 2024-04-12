@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\models\\datalayer\\scrumprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\models\\datalayer\\scrumprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\models\\datalayer\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\models\\datalayer\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\models\\datalayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\models\\datalayer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\viewmodels\\admin\\adminadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\viewmodels\\admin\\adminadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\viewmodels\\bookapptviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\viewmodels\\bookapptviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\views\\bookappt\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\views\\bookappt\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\controllers\\bookapptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\controllers\\bookapptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|c:\\users\\tforsgren\\documents\\github\\swdv280capstoneproject\\scrumproject\\scrumproject\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{926F6BFB-132A-46E5-AF29-C68C7B9FA44A}|ScrumProject\\ScrumProject.csproj|solutionrelative:scrumproject\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,19 +54,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "ScrumProject\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "ScrumProject\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-11T19:02:32.615Z",
+              "DocumentIndex": 1,
+              "Title": "ScrumProjectContext.cs",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "RelativeDocumentMoniker": "ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "RelativeToolTip": "ScrumProject\\Models\\DataLayer\\ScrumProjectContext.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAswDkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T04:37:32.506Z",
               "EditorCaption": ""
             },
             {
@@ -61,48 +77,48 @@
               "RelativeDocumentMoniker": "ScrumProject\\Models\\DataLayer\\User.cs",
               "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\User.cs",
               "RelativeToolTip": "ScrumProject\\Models\\DataLayer\\User.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T19:01:29.276Z",
+              "WhenOpened": "2024-04-12T02:16:31.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\UserType.cs",
               "RelativeDocumentMoniker": "ScrumProject\\Models\\DataLayer\\UserType.cs",
               "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Models\\DataLayer\\UserType.cs",
               "RelativeToolTip": "ScrumProject\\Models\\DataLayer\\UserType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T19:01:22.297Z",
+              "WhenOpened": "2024-04-12T02:05:34.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "ScrumProject\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "ScrumProject\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAwwDwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T19:02:32.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "ScrumProject\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\AdminController.cs",
               "RelativeToolTip": "ScrumProject\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAANAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAADwvysAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T18:55:52.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookApptController.cs",
-              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\BookApptController.cs",
-              "RelativeDocumentMoniker": "ScrumProject\\Controllers\\BookApptController.cs",
-              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\BookApptController.cs",
-              "RelativeToolTip": "ScrumProject\\Controllers\\BookApptController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T01:00:19.719Z",
               "EditorCaption": ""
             }
           ]
@@ -115,41 +131,93 @@
       "FloatingWindowState": {
         "Id": "f6839c11-6e20-4ff9-b6fe-598c4dccd37c",
         "Display": 2,
-        "X": 291,
-        "Y": 286,
-        "Width": 1553,
+        "X": -5,
+        "Y": 73,
+        "Width": 1450,
         "Height": 792,
         "WindowState": 2
       },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "admin.css",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\css\\admin.css",
               "RelativeDocumentMoniker": "ScrumProject\\wwwroot\\css\\admin.css",
               "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\css\\admin.css",
               "RelativeToolTip": "ScrumProject\\wwwroot\\css\\admin.css",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAhAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAArwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-11T19:19:42.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "admin.js",
               "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\js\\admin.js",
               "RelativeDocumentMoniker": "ScrumProject\\wwwroot\\js\\admin.js",
               "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\wwwroot\\js\\admin.js",
               "RelativeToolTip": "ScrumProject\\wwwroot\\js\\admin.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-04-11T19:23:19.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminAdd.cs",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ViewModels\\Admin\\AdminAdd.cs",
+              "RelativeDocumentMoniker": "ScrumProject\\ViewModels\\Admin\\AdminAdd.cs",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ViewModels\\Admin\\AdminAdd.cs",
+              "RelativeToolTip": "ScrumProject\\ViewModels\\Admin\\AdminAdd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T19:31:53.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookApptViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ViewModels\\BookApptViewModel.cs",
+              "RelativeDocumentMoniker": "ScrumProject\\ViewModels\\BookApptViewModel.cs",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\ViewModels\\BookApptViewModel.cs",
+              "RelativeToolTip": "ScrumProject\\ViewModels\\BookApptViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T21:22:02.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookApptController.cs",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\BookApptController.cs",
+              "RelativeDocumentMoniker": "ScrumProject\\Controllers\\BookApptController.cs",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Controllers\\BookApptController.cs",
+              "RelativeToolTip": "ScrumProject\\Controllers\\BookApptController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwDAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T21:13:40.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\BookAppt\\Index.cshtml",
+              "RelativeDocumentMoniker": "ScrumProject\\Views\\BookAppt\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tforsgren\\Documents\\GitHub\\SWDV280CapstoneProject\\ScrumProject\\ScrumProject\\Views\\BookAppt\\Index.cshtml",
+              "RelativeToolTip": "ScrumProject\\Views\\BookAppt\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T22:08:05.971Z",
               "EditorCaption": ""
             }
           ]
