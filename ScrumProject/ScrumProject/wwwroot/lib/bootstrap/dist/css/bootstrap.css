@@ -66,6 +66,12 @@
     --cust-light-rgb: 255, 249, 201;
     --cust-medium-rgb: 255, 201, 95;
     --cust-dark-rgb: 28, 10, 0;
+    --exp-green-light: #D8E9A8;
+    --exp-green-medium: #4E9F3D;
+    --exp-green-dark: #1E5128;
+    --exp-green-light-rgb: 216, 233, 168;
+    --exp-green-medium-rgb: 78, 159, 61;
+    --exp-green-dark-rgb: 30, 81, 40;
 }
 
 *,
@@ -7851,6 +7857,21 @@ textarea.form-control-lg {
 .bg-custom-dark {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--cust-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-green-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--exp-green-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-green-medium {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--exp-green-medium-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-green-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--exp-green-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {

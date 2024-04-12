@@ -14,48 +14,43 @@
     <link rel="stylesheet" href="~/ScrumProject.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/overwrite.css" asp-append-version="true" />
 </head>
-<body>
+<body class="bg-custom-sage">
     <header class="mb-5">
-        <nav class="navbar fixed-top navbar-expand-lg bg-custom-sage shadow-sm navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-lg bg-green-dark shadow-sm navbar-dark">
             <div class="container-fluid">
-<<<<<<< HEAD
-                <a class="navbar-brand text-black" asp-controller="Home" asp-action="Index" asp-area="">Logo</a>
-=======
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Logo</a>
->>>>>>> main
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index" asp-area="">Logo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navItems">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-<<<<<<< HEAD
-                            <a class="nav-link active text-black" aria-current="page" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
+                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="Contact" asp-action="Index" asp-area="">Contact Us</a>
+                            <a class="nav-link" aria-current="page" asp-controller="Contact" asp-action="Index" asp-area="">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews" asp-area="">Reviews</a>
+                            <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Reviews" asp-area="">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index" asp-area="">Book Appointment</a>
+                            <a class="nav-link" aria-current="page" asp-controller="BookAppt" asp-action="Index" asp-area="">Book Appointment</a>
                         </li>
                     </ul>
                     <!-- Identity Sign In/Out and Register -->
                     @using Microsoft.AspNetCore.Identity
                     @inject SignInManager<AuthUser> signInManager
 
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav d-flex flex-row">
                         @if (signInManager.IsSignedIn(User))
                         {
                             <!-- Signed in user - logout and username -->
                             <li class="nav-item">
                                 <form method="post" asp-action="LogOut" asp-controller="Account" asp-area="">
-                                    <button type="submit" class="btn btn-outline-dark me-2">Logout</button>
+                                    <button type="submit" class="btn btn-light me-2">Logout</button>
                                 </form>
                             </li>
-                            <li class="nav-item text-light mt-1">@User.Identity.Name</li>
+                            <li class="nav-item text-light mt-2 me-2">@User.Identity.Name</li>
                         }
                         else
                         {
@@ -63,10 +58,10 @@
 
                             <!-- Anonymous user -->
                             <li class="nav-item @Nav.Active("Register", action)">
-                                <a asp-action="Register" asp-controller="Account" asp-area="" class="btn btn-outline-dark me-2">Register</a>
+                                <a asp-action="Register" asp-controller="Account" asp-area="" class="btn btn-light mb-2 mb-lg-0 me-2">Register</a>
                             </li>
                             <li class="nav-item">
-                                <a asp-action="Login" asp-controller="Account" asp-area="" class="btn btn-outline-dark me-2">Log In</a>
+                                <a asp-action="Login" asp-controller="Account" asp-area="" class="btn btn-light me-2">Log In</a>
                             </li>
                         }
 
@@ -76,35 +71,6 @@
                         </li>
                     </ul>
 
-=======
-                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" asp-controller="Contact" asp-action="Index">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-<<<<<<< HEAD
-                             <a class="nav-link text-black" aria-current="page" asp-controller="Home" asp-action="Reviews">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link text-black" aria-current="page" asp-controller="BookAppt" asp-action="Index">Book Appointment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
-                        </li>
-                    </ul>
-                      <a class="btn btn-outline-dark me-2" role="button">Log In</a>
-                    <a class="btn btn-outline-dark" role="button">Sign Up</a>
-=======
-                            <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Reviews">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" asp-controller="BookAppt" asp-action="Index">Book Appointment</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-light text-custom-dark me-2" role="button">Log In</a>
-                    <a class="btn btn-light text-custom-dark" role="button">Sign Up</a>
->>>>>>> main
                 </div>
             </div>
         </nav>
@@ -115,7 +81,7 @@
         </main>
     </div>
 
-    <footer class="text-center text-lg-start text-custom-light">
+    <footer class="text-center text-lg-start text-custom-dark">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -182,6 +148,9 @@
                         <p>
                             <a asp-controller="BookAppt" asp-action="Index" class="text-reset">Book An Appointment</a>
                         </p>
+                        <p>
+                            <a asp-controller="Forms" asp-action="Index" class="text-reset">Download Our Forms</a>
+                        </p>
                     </div>
                     <!-- Grid column -->
                     <!-- Grid column -->
@@ -205,7 +174,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Class of 2024</a>
+            <a class="text-reset fw-bold" href="#!">Class of 2024</a>
         </div>
         <!-- Copyright -->
     </footer>
