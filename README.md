@@ -28,5 +28,6 @@ They can ONLY be used in 'bg' or 'text' classes
 6. bg-green-light
 7. bg-green-medium
 8. bg-green-dark
+
 ##"overwrite.css" does provide some linear-gradients using these values
 However, `bg-light-to-md` is the only class used on the homepage, and is only used as the background for our lists of services
