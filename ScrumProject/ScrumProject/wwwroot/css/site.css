@@ -19,8 +19,17 @@ html {
 }
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 textarea {
