@@ -59,7 +59,7 @@ namespace ScrumProject.Areas.Admin.Controllers
         public async Task<ActionResult> adder(AdminAdd model)
         {
 
-            model.formtype = "newuser";
+            
             //TempData["Model"] = model;
             AdminAdd carryon = model;
             //model.UserData.UserType.Description = value;
@@ -119,6 +119,7 @@ namespace ScrumProject.Areas.Admin.Controllers
                 model.Errors = errors;
                 model.Users = users;    
                 model.shouldReload = true;
+                model.formtype = "newuser";
                 foreach (AuthUser user in users)
                 {
                     var roles = await userManager.GetRolesAsync(user);
