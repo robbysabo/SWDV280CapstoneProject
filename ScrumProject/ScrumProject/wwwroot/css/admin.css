@@ -13,7 +13,7 @@
 }
 
 .overlay-content {
-    background-color: white;
+    background-color: #242424;
     width: 50%;
     max-width: 400px;
     margin: 100px auto;
@@ -40,4 +40,13 @@
     right: 10px;
     cursor: pointer;
 }
+body {
+    color: white;
+    background: #242424;
 }
+
+.dark {
+    background-color: #242424;
+    color: white;
+}
+

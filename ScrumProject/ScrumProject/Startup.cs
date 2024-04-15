@@ -23,7 +23,8 @@ namespace ScrumProject
             services.AddIdentity<AuthUser, IdentityRole>()
                 .AddEntityFrameworkStores<ScrumProjectContext>()
                 .AddDefaultTokenProviders();
-           
+            //added sessionstate
+            services.AddSession();
         }
         public void Configure(WebApplication app, IWebHostEnvironment env)
         {
@@ -40,7 +41,8 @@ namespace ScrumProject
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapRazorPages();
-
+            //added sessionstate
+            app.UseSession();
             //changed default routes to add admin area
             /*
             app.MapControllerRoute(
