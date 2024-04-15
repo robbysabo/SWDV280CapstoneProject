@@ -20,7 +20,7 @@ function hideOverlay() {
 
 userForm.addEventListener("submit", function (event) {
     //var actionUrl = '@Url.Action("adder","Admin/Admin")';
-    event.preventDefault(); // Prevent default form submission
+   // event.preventDefault(); // Prevent default form submission
     if (!userForm.checkValidity()) {
         // Form is invalid, do not proceed with submission
         return;
@@ -35,7 +35,7 @@ userForm.addEventListener("submit", function (event) {
         
         data: formData,
         
-        success: function (recData) { alert('Success'); },
-        error: function (status, error) { alert(status + error)}
+        success: function (recData) { },
+        error: function (status, error) { }
     });
 });
