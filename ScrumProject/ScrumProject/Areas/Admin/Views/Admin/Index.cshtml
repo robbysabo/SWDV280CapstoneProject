@@ -1,0 +1,243 @@
+﻿@using ScrumProject.ViewModels;
+@using ScrumProject.Models.DataLayer;
+@model ScrumProject.ViewModels.Admin.AdminAdd
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<link rel="stylesheet" href="~/css/admin.css">
+
+
+<h1>Admin Page</h1>
+
+<!-- <button class="btn btn-primary" onclick="showEditOverlay()">Edit</button>-->
+<button class="btn btn-success" onclick="showNewUserOverlay()">New User</button>
+
+<!-- Overlay for Edit -->
+<div id="editOverlay" class="overlay">
+    <div class="overlay-content">
+        <span class="close-btn" onclick="hideOverlay()">&times;</span>
+        <!-- Your edit form content here -->
+        Edit Form
+    </div>
+</div>
+
+<!--- Overlay for New User  -->
+
+<div id="newUserOverlay" class="overlay">
+    <div class="overlay-content">
+        <h1>New User Form</h1>
+        <span class="close-btn" onclick="hideOverlay()">&times;</span>
+       
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <form asp-action="adder" method="post" id="userForm" >
+            <div class="form-row">
+                <p class="text-danger"></p>
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div>
+                        <ul class="text-danger">
+                            @foreach (var modelError in Model.Errors)
+                            {
+                                <li>@modelError.Description.ToString();</li>
+                            }
+                        </ul>
+                    </div>
+                }
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <span class="text-danger">*</span>
+                    <input asp-for="@Model.UserData.UserName" type="text" class="form-control dark" id="username" required>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <span class="text-danger">*</span>
+                <input asp-for="@Model.UserData.Email" type="email" class="form-control dark" id="email" required>
+           
+            </div>
+
+            <div class="form-group">
+                
+                <label for="password">Password</label>
+                <span class="text-danger">*</span>
+                
+                <input asp-for="@Model.temp_password" type="password" class="form-control dark" id="password" required>
+                <span asp-validation-for="@Model.temp_password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="usertype">usertype</label>
+                <span class="text-danger">*</span>
+                <select asp-for="@Model.UserData.RoleNames" class="form-control form-select dark" aria-label=".form-select-lg" id="usertype" data-single-select>
+                    <option selected>User</option>
+                    @foreach (var role in Model.Roles)
+                    {
+                        <option class="dark" value="@role">@role</option>
+                    }
+
+                </select>
+             
+            </div> 
+             
+            
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+        
+    </div>
+</div>
+
+
+
+
+
+<br />
+<br />
+
+<table class="table table-bordered table-striped table-sm table-dark">
+    <thead>
+        <tr><th>Username</th><th>Roles</th><th></th><th></th></tr>
+    </thead>
+    <tbody>
+        @if (Model.Users.Count() == 0)
+        {
+            <tr><td colspan="5">There are no user accounts.</td></tr>
+        }
+        else
+        {
+            @foreach (AuthUser user in Model.Users)
+            {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>
+                        @foreach (string roleName in user.RoleNames)
+                        {
+                            <div>@roleName</div>
+                        }
+                    </td>
+                    
+                    @if (!user.RoleNames.Contains("Admin"))
+                    {
+                        <td>
+                            <form method="post" asp-action="AddToAdmin"
+                            asp-route-id="@user.Id">
+                                <button type="submit" class="btn btn-primary">
+                                    Add To Admin
+                                </button>
+                            </form>
+                        </td>
+                    }
+                    else if (user.UserName == "Joker")
+                    {
+                        
+                            <td>
+                                <button type="button" class="btn btn-disabled" disabled hover>
+                                Remove From Admin
+                                </button>
+                            </td>
+                        
+                    }
+                    else
+                    {
+                        <td>
+                            <form method="post" asp-action="RemoveFromAdmin"
+                            asp-route-id="@user.Id">
+                                <button type="submit" class="btn btn-primary">
+                                    Remove From Admin
+                                </button>
+                            </form>
+                        </td>
+                    }
+                    @if (user.UserName == "Joker")
+                    {
+                        <td>
+                            
+                            <button type="submit" class="btn btn-disabled" disabled>
+                                Delete User
+                            </button>
+                        
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <form method="post" asp-action="Delete"
+                                  asp-route-id="@user.Id">
+                                <button type="submit" class="btn btn-danger">
+                                    Delete User
+                                </button>
+                            </form>
+                        </td>
+                    }
+                        </tr>
+                }
+        }
+    </tbody>
+</table>
+
+<h1 class="mb-2">Manage Roles</h1>
+
+@if (Model.Roles.Count() == 0)
+{
+    <form method="post" asp-action="CreateAdminRole">
+        <button type="submit" class="btn btn-primary">
+            Create Admin Role
+        </button>
+    </form>
+}
+else
+{
+    <table class="table table-bordered table-striped table-sm table-dark">
+        <thead>
+            <tr><th>Role</th><th></th></tr>
+        </thead>
+        <tbody>
+            @foreach (var role in Model.Roles)
+            {
+                <tr>
+                    <td>@role.Name</td>
+                    @if (role.Name == "Admin")
+                    {
+                        <td>
+                        <button type="button" class="btn btn-disabled" disabled hover>
+                            Delete Role
+                        </button>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <form method="post" asp-action="DeleteRole"
+                              asp-route-id="@role.Id">
+                            <button type="submit" class="btn btn-primary">
+                                Delete Role
+                            </button>
+                        </form>
+                    </td>}
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="~/js/admin.js"></script>
+<script>
+    $(document).ready(function () {
+        $('select[data-single-select]').removeAttr('multiple');
+    });
+</script>
+@{
+    if (Model.formtype == "newuser")
+    {
+        <script>showNewUserOverlay();</script>
+    }
+}
