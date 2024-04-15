@@ -7861,21 +7861,6 @@ textarea.form-control-lg {
     background-color: rgba(var(--cust-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-exp-green-light {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--exp-green-light-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-exp-green-medium {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--exp-green-medium-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-exp-green-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--exp-green-dark-rgb), var(--bs-bg-opacity)) !important;
-}
-
 .bg-transparent {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
