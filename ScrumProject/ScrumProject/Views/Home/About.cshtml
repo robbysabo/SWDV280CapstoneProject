@@ -4,63 +4,53 @@
 }
 
 <div class="text-start">
-    <div class="container">
+    <div class="container mt-3">
+        <section class="container-fluid d-flex justify-content-center align-items-center text-center">
+            
+                <div class="bg-green-light custom-rounded bg-opacity-75 p-5 shadow">
+                    <div class="row">
+                    <div class="card h-100 w-100 shadow-sm bg-custom-sage">
+                        
+                        <img class="card-img" height="350px" width="100" src="/images/tech3.jpg" alt="Scotts inside shop"/>
+                        <div style="opacity: 90%;" class="card-img-overlay text-white overflow-hidden">
+                            <h2 class="card-title p-0">Meet our team:</h2>
+                            <p class="card-text " style="margin-top:3em">
+                                But Scotts Auto Repair is more than just one person; it's a collective of dedicated individuals who share a common commitment to delivering excellence in every aspect of our work. Our team of skilled artisans and professionals bring a wealth of expertise and a diversity of talents to the table, ensuring that every customer receives nothing short of perfection.
+                            </p>
 
-        <h2>Welcome to Scotts Auto Repair, where expertise meets passion!</h2>
-        <div class="d-grid">
-            <p class="col-10">
+                        </div>
+                            
+                        </div>
 
-                At the heart of our establishment is Scott, a visionary entrepreneur with 50 years of experience in Automotive repair industry. With a keen eye for detail and a relentless pursuit of excellence, Scott has curated a space where quality craftsmanship and exceptional service intersect.
-                <br />
-                But Scotts Auto Repair is more than just one person; it's a collective of dedicated individuals who share a common commitment to delivering excellence in every aspect of our work. Our team of skilled artisans and professionals bring a wealth of expertise and a diversity of talents to the table, ensuring that every customer receives nothing short of perfection.
-            </p>
-            <h3>Meet our team:</h3>
-
-            @foreach (var i in Model)
-            {
-                <div class="col float-md-start m-4">
-                    <img class="rounded-3 shadow-lg" width="200em" height="250em" src="/@i.ImageSrc" alt="@i.ImageAlt" />
-                    <br />
-                    <p>@i.Description</p>
-                    <hr />
-
+                    </div>
                 </div>
-            }
-            <div class="row">
+        </section>
+        @foreach (var i in Model)
+        {
+            <div class="col float-md-start m-4">
+                <img class="rounded-3 shadow-lg" width="200em" height="250em" src="/@i.ImageSrc" alt="@i.ImageAlt" />
+                <br />
+                <p class="mt-2">@i.Description</p>
+                <hr />
 
-
-                @* <p class="">
-                <b>Scott Rockefeller</b> - Founder & Master Craftsman
-                With a lifelong passion for automotive repair, Mr. Rockefeller brings unparalleled expertise and a creative vision to Scotts' auto repair . From conceptualization to execution, He oversees every project with precision and finesse, setting the standard for excellence in our industry.
-
-                </p>
-
-                <p class="">
-                <b>Joe Gonzales</b> - Lead Tech
-                Joe is the backbone of our operation, with 30 years of experience in automotive repair. Whether it's oil change, brake service, rotation and balance, engine tune-up, and cooling system service. Joe approaches every task with unwavering dedication and a commitment to exceeding expectations.
-
-                </p>
-                <p class="">
-                <b>Natalie Smith -</b> Repair Tech
-                As a seasoned diagnosis, repair and maintenance technician with foundational technical expertise. Natalie brings a unique perspective to our team. With a keen attention to detail and a passion for innovation, she plays a crucial role in ensuring that every project is executed flawlessly.
-                </p>
-
-
-
-
-
-
-
-
-
-                </div> *@
             </div>
+        }
+        @* <div class="row">        
+            <div class="d-grid">
+                <p class="col-10">
+
+                    At the heart of our establishment is Scott, a visionary entrepreneur with 50 years of experience in Automotive repair industry. With a keen eye for detail and a relentless pursuit of excellence, Scott has curated a space where quality craftsmanship and exceptional service intersect.
+                    <br />
+                    But Scotts Auto Repair is more than just one person; it's a collective of dedicated individuals who share a common commitment to delivering excellence in every aspect of our work. Our team of skilled artisans and professionals bring a wealth of expertise and a diversity of talents to the table, ensuring that every customer receives nothing short of perfection.
+                </p>
+            </div>
+        </div> *@
 
 
 
 
 
-        </div>
+    </div>
 
 
 
