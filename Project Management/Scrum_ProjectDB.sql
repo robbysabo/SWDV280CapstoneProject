@@ -1,47 +1,76 @@
-USE master
-GO
 
-IF DB_ID('ScrumProject') IS NOT NULL
-    DROP DATABASE ScrumProject
+use master;
+GO
+  
+DROP DATABASE IF EXISTS ScrumProject;
 GO
 
 CREATE DATABASE ScrumProject
 GO
 
+SET ANSI_NULLS ON
+
 USE ScrumProject
+select * from WorkerImages;
+CREATE TABLE UserTypes (
+    UserTypeID INT PRIMARY KEY IDENTITY  NOT NULL,
+    Description TEXT NOT NULL
+); 
 
---appointments table, no dependencies
-CREATE TABLE Appointments (
-	appt_id INT PRIMARY KEY IDENTITY,
-	req_date DATETIME NOT NULL,
-	type VARCHAR(255) NOT NULL,
-	description VARCHAR(255) NOT NULL, --should we make optional?
-	contact_email VARCHAR(80) NOT NULL,
-	contact_phone VARCHAR(10) NOT NULL,
-	appt_stat CHAR(1) --' '/null: open, 'C' complete, 'V' void 
-);
-
---users table, no dependencies
 CREATE TABLE Users (
-	u_id INT PRIMARY KEY IDENTITY, --I think user_id is a reserved word
-	user_type CHAR(1) NOT NULL, --'E': employee, 'C': customer, A:admn
-	f_name VARCHAR(255) NOT NULL,
-	l_name VARCHAR(255) NOT NULL,
-	email VARCHAR(80),
-	pass VARCHAR(50) NOT NULL --we can do validation in .NET
+    UserID INT PRIMARY KEY NOT NULL,
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    Email VARCHAR(80) NOT NULL,
+    Password VARCHAR(50) NOT NULL,
 );
 
---images table, no dependencies
-CREATE TABLE Images (
-	img_id INT PRIMARY KEY IDENTITY,
-	img_file NVARCHAR(MAX)
+CREATE TABLE AppointmentType (
+    AppointmentTypeID INT PRIMARY KEY IDENTITY NOT NULL,
+    Description TEXT NOT NULL,
+); 
+
+
+CREATE TABLE Appointments(
+    AppointmentID INT PRIMARY KEY NOT NULL,
+    RequestDate DATETIME NOT NULL,
+    AppointmentTypeID INT NOT NULL,
+    FOREIGN KEY (AppointmentTypeID) REFERENCES AppointmentType(AppointmentTypeID),
 );
 
---jobs table, two dependencies
+CREATE TABLE WorkerImages(
+    ImageID INTEGER PRIMARY KEY IDENTITY NOT NULL,
+    ImageSrc VARCHAR(MAX) NOT NULL,
+    ImageAlt VARCHAR(MAX) NOT NULL,
+    Description VARCHAR(MAX)
+)
+INSERT WorkerImages (ImageSrc, ImageAlt, Description)
+Values('images/owner.jpg', 'Shop owner', 'Founder & Master Craftsman
+With a lifelong passion for automotive repair, Mr. Rockefeller brings unparalleled expertise and a creative vision to Scotts auto repair . From conceptualization to execution, He oversees every project with precision and finesse, setting the standard for excellence in our industry.'),
+('images/tech1.jpg', 'Repair technician', 'Repair Tech
+As a seasoned diagnosis, repair and maintenance technician with foundational technical expertise. Natalie brings a unique perspective to our team. With a keen attention to detail and a passion for innovation, she plays a crucial role in ensuring that every project is executed flawlessly.'),
+('images/tech2.jpg', 'Lead technician', 'Lead Tech
+Joe has 30 years of experience in automotive repair. Whether its oil change, brake service, rotation and balance, engine tune-up, and cooling system service. Joe approaches every task with unwavering dedication and a commitment to exceeding expectations.');
+
 CREATE TABLE Jobs (
-	job_id INT PRIMARY KEY IDENTITY,
-	description VARCHAR(255) NOT NULL,
-	img_id INT NOT NULL REFERENCES Images(img_id), --fk to images
-	u_id INT NOT NULL REFERENCES Users(u_id) --fk to users
+    JobID INT PRIMARY KEY IDENTITY NOT NULL,
+    TypeDescription VARCHAR(255) NOT NULL,
+    ImageID INT NOT NULL,
 );
+GO
+-- DML
+USE ScrumProject;
+
+ALTER TABLE Users
+    ADD UserTypeID INT NOT NULL
+    REFERENCES UserTypes(UserTypeID);
+
+
+INSERT INTO AppointmentType (Description)
+VALUES ('New Hire'), ('Client');
+
+USE ScrumProject;
+INSERT INTO UserTypes (Description) 
+VALUES ('Technician'), ( 'Administration'), ('General Manager');
+
 
