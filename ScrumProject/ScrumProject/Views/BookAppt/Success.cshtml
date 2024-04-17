@@ -1,13 +1,13 @@
-﻿@*
-   Appt success page
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Success";
 }
 
-<div class="container mt-5">
     <!--success message-->
-    <div class="d-flex justify-content-center align-items-center flex-column">
-        <h4 class="text-success m-3">Appointment request received.</h4>
-        <h6 class="text-secondary fst-italic">Someone from our team will contact you shortly.</h6>
-    </div>
+<div class="row text-center mt-5">
+    <h2>Appointment request received.</h2>
+    <p>Someone from our team will contact you shortly.</p>
+</div>
+
+<div class="text-center mt-3">
+    <a class="btn btn-outline-dark" href="@Url.Action("Index", "Home")">Return</a>
 </div>
