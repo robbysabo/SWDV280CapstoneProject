@@ -1,7 +1,6 @@
 
-USE master
--- Can set up user authentication in the SQL files, but I'm not to familiar with how that looks, 
-    -- If anyone wants to take a stab at it. C# Has Some good Authorization
+use master;
+GO
   
 DROP DATABASE IF EXISTS ScrumProject;
 GO
@@ -9,17 +8,14 @@ GO
 CREATE DATABASE ScrumProject
 GO
 
--- I don't think 'Customers' should have a login, I don't see why if it's an AutoRepair Shop. 
-    -- So, that leaves Technicians, Administrators & General Manager.
-
-
+SET ANSI_NULLS ON
 
 USE ScrumProject
-
+select * from WorkerImages;
 CREATE TABLE UserTypes (
     UserTypeID INT PRIMARY KEY IDENTITY  NOT NULL,
     Description TEXT NOT NULL
-); -- 'Technician', 'Administrator', 'General Manager'
+); 
 
 CREATE TABLE Users (
     UserID INT PRIMARY KEY NOT NULL,
@@ -29,11 +25,10 @@ CREATE TABLE Users (
     Password VARCHAR(50) NOT NULL,
 );
 
-
 CREATE TABLE AppointmentType (
     AppointmentTypeID INT PRIMARY KEY IDENTITY NOT NULL,
     Description TEXT NOT NULL,
-); -- 'New Hire', 'Client'.
+); 
 
 
 CREATE TABLE Appointments(
@@ -43,47 +38,33 @@ CREATE TABLE Appointments(
     FOREIGN KEY (AppointmentTypeID) REFERENCES AppointmentType(AppointmentTypeID),
 );
 
--- Option #1 Depending on how many images we plan on adding, thought having a tag name for a set of photos would make querying images easier.
-    -- That is if the plan is to store the image files in SQL VARBINARY.
--- Option #2 Perhaps a Resources Directory, then do it HTML style in Visual Studio might suffice,the pictures i think of dont seem confidential. 
-CREATE TABLE ImageTags(
-    ImageTagID INT PRIMARY KEY IDENTITY NOT NULL,
-    ImageTag VARCHAR(15) NOT NULL
-);
-
-CREATE TABLE Images(
+CREATE TABLE WorkerImages(
     ImageID INTEGER PRIMARY KEY IDENTITY NOT NULL,
-    ImageSrc VARBINARY(MAX) NOT NULL,
+    ImageSrc VARCHAR(MAX) NOT NULL,
     ImageAlt VARCHAR(MAX) NOT NULL,
-    ImageCaption VARCHAR(MAX) -- ALLOW NULL: May be unecessary because not all images will require a caption, unless someone disagrees, then just add NOT NULL.
-); 
-
-
+    Description VARCHAR(MAX)
+)
+INSERT WorkerImages (ImageSrc, ImageAlt, Description)
+Values('images/owner.jpg', 'Shop owner', 'Founder & Master Craftsman
+With a lifelong passion for automotive repair, Mr. Rockefeller brings unparalleled expertise and a creative vision to Scotts auto repair . From conceptualization to execution, He oversees every project with precision and finesse, setting the standard for excellence in our industry.'),
+('images/tech1.jpg', 'Repair technician', 'Repair Tech
+As a seasoned diagnosis, repair and maintenance technician with foundational technical expertise. Natalie brings a unique perspective to our team. With a keen attention to detail and a passion for innovation, she plays a crucial role in ensuring that every project is executed flawlessly.'),
+('images/tech2.jpg', 'Lead technician', 'Lead Tech
+Joe has 30 years of experience in automotive repair. Whether its oil change, brake service, rotation and balance, engine tune-up, and cooling system service. Joe approaches every task with unwavering dedication and a commitment to exceeding expectations.');
 
 CREATE TABLE Jobs (
     JobID INT PRIMARY KEY IDENTITY NOT NULL,
     TypeDescription VARCHAR(255) NOT NULL,
     ImageID INT NOT NULL,
 );
-
--- DML Statments --
 GO
+-- DML
 USE ScrumProject;
-
--- I think having an ImageTags Table would make querying much easier, 
-    -- On the other hand, i can't see the sight having too many images. 
-    -- Example psuedocode: Where (i => i.Tag == 'Technician' OR 'General Manager' OR 'Administration')
-
-ALTER TABLE Images  
-    ADD ImageTagID INT NOT NULL
-    REFERENCES ImageTags(ImageTagID);
 
 ALTER TABLE Users
     ADD UserTypeID INT NOT NULL
     REFERENCES UserTypes(UserTypeID);
 
-INSERT INTO ImageTags (ImageTag)
-VALUES ('Technician'), ('Administrator'), ('Manager'), ('Workshop');
 
 INSERT INTO AppointmentType (Description)
 VALUES ('New Hire'), ('Client');
@@ -91,9 +72,5 @@ VALUES ('New Hire'), ('Client');
 USE ScrumProject;
 INSERT INTO UserTypes (Description) 
 VALUES ('Technician'), ( 'Administration'), ('General Manager');
-
-
-
-
 
 
