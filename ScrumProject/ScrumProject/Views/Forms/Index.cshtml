@@ -1,57 +1,37 @@
 ﻿<div class="container mt-5">
 
     <!--title/description-->
-    <h1 class="text-center mb-4">Download Forms</h1>
-    <p class="lead text-center">Here you can find a list of forms that are commonly requested or useful for our clients. Feel free to download and fill out the necessary forms for your repair process.</p>
+    <div class="row justify-content-end">
+        <div class="row col-md-8">
+            <h1 class="text-left mb-3">Download Forms</h1>
+            <p class="lead text-left">Here you can find a list of forms that are commonly requested or useful for our clients. Feel free to download and fill out the necessary forms for your repair process.</p>
+  
+            <div class="bg-white p-4 rounded-1">
 
-    <div class="accordion" id="formsAccordion">
-        <!-- Insurance Verification -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="insuranceVerificationHeader">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#insuranceVerificationCollapse" aria-expanded="true" aria-controls="insuranceVerificationCollapse">
-                    Insurance Verification
-                </button>
-            </h2>
-            <div id="insuranceVerificationCollapse" class="accordion-collapse collapse show" aria-labelledby="insuranceVerificationHeader" data-bs-parent="#formsAccordion">
-                <div class="accordion-body">
-                    <p>This form is used to verify insurance coverage for the vehicle undergoing repair.</p>
-                    <a href="@Url.Action("Download", "Forms", new { fileName = "InsuranceVerification.pdf" })" class="btn btn-primary">Download</a>
+                <!-- Insurance Verification -->
+                <div class="pb-3">
+                    <h4> Insurance Verification: </h4>
+                    <a href="@Url.Action("Download", "Forms", new { fileName = "InsuranceVerification.pdf" })" class="btn btn-primary btn-sm">Download PDF</a>
                 </div>
-            </div>
-        </div>
 
-        <!-- Release of Liability -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="releaseLiabilityHeader">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#releaseLiabilityCollapse" aria-expanded="false" aria-controls="releaseLiabilityCollapse">
-                    Release of Liability
-                </button>
-            </h2>
-            <div id="releaseLiabilityCollapse" class="accordion-collapse collapse" aria-labelledby="releaseLiabilityHeader" data-bs-parent="#formsAccordion">
-                <div class="accordion-body">
-                    <p>This form releases the repair shop from liability once the repair work is completed.</p>
-                    <a href="@Url.Action("Download", "Forms", new { fileName = "ReleaseLiability.pdf" })" class="btn btn-primary">Download</a>
+                <!-- Release of Liability -->
+                <div class="pb-3">
+                    <h4> Release of Liability: </h4>
+                    <a href="@Url.Action("Download", "Forms", new { fileName = "ReleaseLiability.pdf" })" class="btn btn-primary btn-sm">Download PDF</a>
                 </div>
-            </div>
-        </div>
 
-        <!-- Repair Authorization -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="repairAuthorizationHeader">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#repairAuthorizationCollapse" aria-expanded="false" aria-controls="repairAuthorizationCollapse">
-                    Repair Authorization
-                </button>
-                <span class="badge text-bg-primary">Popular</span>
-            </h2>
-            <div id="repairAuthorizationCollapse" class="accordion-collapse collapse" aria-labelledby="repairAuthorizationHeader" data-bs-parent="#formsAccordion">
-                <div class="accordion-body">
-                    <p>This form authorizes the repair shop to perform necessary repairs on the vehicle.</p>
-                    <a href="@Url.Action("Download", "Forms", new { fileName = "RepairAuthorization.pdf" })" class="btn btn-primary">Download</a>
+                <!-- Repair Authorization -->
+                <div class="pb-3">
+                    <h4> Repair Authorization: </h4>
+                    <a href="@Url.Action("Download", "Forms", new { fileName = "RepairAuthorization.pdf" })" class="btn btn-primary btn-sm">Download PDF</a>
                 </div>
+
             </div>
         </div>
 
         <!--extra info-->
-        <p class="text-secondary text-center fst-italic">If you require a form that is not included on this page, or you have any other general questions. Please reach out to us directly or visit our contact page and we are more than happy to help.</p>
+        <div class="col-md-4 text-right pt-5">
+            <p class="text-secondary fst-italic">If you require a form that is not included on this page, or you have any other general questions. Please reach out to us directly or visit our <a href="/Contact"> contact page </a> and we are more than happy to help.</p>
+        </div>
     </div>
 </div>
