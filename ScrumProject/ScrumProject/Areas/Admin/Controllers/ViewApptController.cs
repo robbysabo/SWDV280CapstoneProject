@@ -23,8 +23,6 @@ namespace ScrumProject.Controllers
         }
 
 
-
-        [HttpGet]
         public IActionResult Index()
         {
             var upcomingAppointments = appt.List(new QueryOptions<Appointment> { OrderBy = a => a.RequestDate }).ToList();
@@ -32,10 +30,10 @@ namespace ScrumProject.Controllers
             return View(upcomingAppointments);
         }
 
-        [HttpPost]
         public IActionResult Todays()
         {
             var upcomingAppointments = appt.List(new QueryOptions<Appointment> { OrderBy = a => a.RequestDate }).ToList();
+            
 
             return View(upcomingAppointments);
         }
