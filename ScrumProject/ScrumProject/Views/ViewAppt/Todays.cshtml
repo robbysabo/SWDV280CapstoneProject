@@ -1,0 +1,47 @@
+﻿﻿@using ScrumProject.ViewModels;
+@using ScrumProject.Models.DataLayer;
+
+
+<h1 class="text-center mt-4">Todays</h1>
+
+<!-- Filter -->
+<form>
+    <div class="mb-5">
+        <label for="types" class="form-label">Select options</label>
+        <select class="form-select">
+            <option selected>All</option>
+            <option value="1">Todays Appointments</option>
+        </select>
+    </div>
+</form>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Requested Date</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            //if (@appointment.RequestDate == DateTime.Today.AddDays(-4))
+            //{
+
+            <tr>
+                <td>@appointment.ContactFname</td>
+                <td>@appointment.ContactLname</td>
+                <td>@appointment.ContactEmail</td>
+                <td>@appointment.ContactPhone</td>
+                <td>@appointment.RequestDate.ToString("d")</td>
+                <td>@appointment.Description</td>
+            </tr>
+            //}
+        }
+    </tbody>
+</table>
