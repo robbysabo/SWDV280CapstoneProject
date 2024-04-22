@@ -24,6 +24,7 @@ public partial class ScrumProjectContext : IdentityDbContext<AuthUser>
     public virtual DbSet<Job> Jobs { get; set; }
     public virtual DbSet<User> Users { get; set; }
     public virtual DbSet<UserType> UserTypes { get; set; }
+    public virtual DbSet<WorkerImage> WorkerImages { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
