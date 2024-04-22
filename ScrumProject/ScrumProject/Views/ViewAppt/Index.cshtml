@@ -1,5 +1,37 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿﻿@using ScrumProject.ViewModels;
+@using ScrumProject.Models.DataLayer;
+
+
+<h1 class="text-center m-4">Appointments</h1>
+
+
+<div class="container mt-5">
+    <h2>Today's Appointments</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>num</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Requested Date</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appointment in Model)
+            {
+                <tr>
+                    <td>@appointment.AppointmentId</td>
+                    <td>@appointment.ContactFname</td>
+                    <td>@appointment.ContactLname</td>
+                    <td>@appointment.ContactEmail</td>
+                    <td>@appointment.ContactPhone</td>
+                    <td>@appointment.RequestDate.ToString("d")</td>
+                    <td>@appointment.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
