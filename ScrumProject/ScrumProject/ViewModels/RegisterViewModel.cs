@@ -8,6 +8,10 @@ namespace ScrumProject.ViewModels
         [StringLength(255)]
         public string Username { get; set; }
 
+        [Required(ErrorMessage = "Please enter an email")]
+        [StringLength(255)]
+        public string Email { get; set; }
+
         [Required(ErrorMessage = "Please enter a password.")]
         [DataType(DataType.Password)]
         [Compare("ConfirmPassword")]
