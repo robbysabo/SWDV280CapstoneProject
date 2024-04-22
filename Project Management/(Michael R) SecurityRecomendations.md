@@ -1,6 +1,18 @@
+# The following DIs have been configured.
+* [X] UseHsts(), UseHttpsRedirection
+* [X] Remove X-Aspnet-version
+* [X] X-Frame-Options = DENY
+* [X] Strict MIME-types enforced - No Sniff
+* [X] Remove X-AspNetMvc-Version
+* [X] Remove x-powered-by
+* [X] Remove server info
+* [X] AddAntiForgery()
+* [X] KestralServerOptions => Remove server version information
+
+
+
 # SECURITY FIRST Implementations (Tasks)
-* Don't be overwhelmed we don't have to implement all these, but If we're going to be minimal then atleast go a bit heavy on security. Could always assign this to 1 or 2 members of the team if anyone feels particularly knowledable in this area.
-* I certainly don't mind taking on the task!
+
 ## DI Recommended middleware configuration (From a more up-to-date source for implementing into the codebase and best practices)
 
 ### UseHsts() 
