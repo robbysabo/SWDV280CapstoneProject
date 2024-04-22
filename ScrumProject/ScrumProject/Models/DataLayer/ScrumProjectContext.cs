@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ScrumProject.Models.DataLayer;
 
-public partial class ScrumProjectContext : DbContext
+public partial class ScrumProjectContext : IdentityDbContext<AuthUser>
 {
     public ScrumProjectContext()
     {
@@ -16,39 +18,23 @@ public partial class ScrumProjectContext : DbContext
     }
 
     public virtual DbSet<Appointment> Appointments { get; set; }
-
     public virtual DbSet<AppointmentType> AppointmentTypes { get; set; }
-
-    public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
-
-    public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; }
-
-    public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
-
-    public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
-
-    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
-
-    public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
-
+    public virtual DbSet<Image> Images { get; set; }
+    public virtual DbSet<ImageTag> ImageTags { get; set; }
     public virtual DbSet<Job> Jobs { get; set; }
-
     public virtual DbSet<User> Users { get; set; }
-
     public virtual DbSet<UserType> UserTypes { get; set; }
-
-    public virtual DbSet<WorkerImage> WorkerImages { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("name=SPContext");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder); //for identity
+        /*
         modelBuilder.Entity<Appointment>(entity =>
         {
-            entity.HasKey(e => e.AppointmentId).HasName("PK__Appointm__8ECDFCA2C9B404AE");
+            entity.HasKey(e => e.AppointmentId).HasName("PK__Appointm__8ECDFCA229F28A39");
 
-            entity.Property(e => e.AppointmentId).ValueGeneratedNever();
+            entity.Property(e => e.AppointmentId).ValueGeneratedOnAdd();
+            entity.Property(e => e.ApptStat).IsFixedLength();
 
             entity.HasOne(d => d.AppointmentType).WithMany(p => p.Appointments)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -57,60 +43,45 @@ public partial class ScrumProjectContext : DbContext
 
         modelBuilder.Entity<AppointmentType>(entity =>
         {
-            entity.HasKey(e => e.AppointmentTypeId).HasName("PK__Appointm__E258530B6C140CE0");
+            entity.HasKey(e => e.AppointmentTypeId).HasName("PK__Appointm__E258530B0ABAC468");
         });
 
-        modelBuilder.Entity<AspNetRole>(entity =>
+        modelBuilder.Entity<Image>(entity =>
         {
-            entity.HasIndex(e => e.NormalizedName, "RoleNameIndex")
-                .IsUnique()
-                .HasFilter("([NormalizedName] IS NOT NULL)");
+            entity.HasKey(e => e.ImageId).HasName("PK__Images__7516F4EC9A160B74");
+
+            entity.HasOne(d => d.ImageTag).WithMany(p => p.Images)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Images__ImageTag__440B1D61");
         });
 
-        modelBuilder.Entity<AspNetUser>(entity =>
+        modelBuilder.Entity<ImageTag>(entity =>
         {
-            entity.HasIndex(e => e.NormalizedUserName, "UserNameIndex")
-                .IsUnique()
-                .HasFilter("([NormalizedUserName] IS NOT NULL)");
-
-            entity.HasMany(d => d.Roles).WithMany(p => p.Users)
-                .UsingEntity<Dictionary<string, object>>(
-                    "AspNetUserRole",
-                    r => r.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId"),
-                    l => l.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId"),
-                    j =>
-                    {
-                        j.HasKey("UserId", "RoleId");
-                        j.ToTable("AspNetUserRoles");
-                        j.HasIndex(new[] { "RoleId" }, "IX_AspNetUserRoles_RoleId");
-                    });
+            entity.HasKey(e => e.ImageTagId).HasName("PK__ImageTag__AE6DABC46D4C5993");
         });
 
         modelBuilder.Entity<Job>(entity =>
         {
-            entity.HasKey(e => e.JobId).HasName("PK__Jobs__056690E286816D2F");
+            entity.HasKey(e => e.JobId).HasName("PK__Jobs__056690E2B17F3FA7");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC122DD687");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCACDE25724C");
 
             entity.Property(e => e.UserId).ValueGeneratedNever();
 
             entity.HasOne(d => d.UserType).WithMany(p => p.Users)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Users__UserTypeI__4222D4EF");
+                .HasConstraintName("FK__Users__UserTypeI__44FF419A");
         });
 
         modelBuilder.Entity<UserType>(entity =>
         {
-            entity.HasKey(e => e.UserTypeId).HasName("PK__UserType__40D2D8F6AA86A146");
+            entity.HasKey(e => e.UserTypeId).HasName("PK__UserType__40D2D8F69DB50F57");
         });
 
-        modelBuilder.Entity<WorkerImage>(entity =>
-        {
-            entity.HasKey(e => e.ImageId).HasName("PK__WorkerIm__7516F4EC7FA23963");
-        });
+        */
 
         OnModelCreatingPartial(modelBuilder);
     }
