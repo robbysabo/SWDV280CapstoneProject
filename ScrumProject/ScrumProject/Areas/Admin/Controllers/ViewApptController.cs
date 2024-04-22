@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ScrumProject.Models.DataAccess;
 using ScrumProject.Models.DataLayer;
 
 namespace ScrumProject.Areas.Admin.Controllers
 {
+    //[Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class ViewApptController : Controller
     {
