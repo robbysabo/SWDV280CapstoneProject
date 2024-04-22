@@ -1,3 +1,8 @@
+# Todos:
+*[ ] todo
+
+
+
 # SECURITY FIRST Implementations (Tasks)
 * Don't be overwhelmed we don't have to implement all these, but If we're going to be minimal then atleast go a bit heavy on security. Could always assign this to 1 or 2 members of the team if anyone feels particularly knowledable in this area.
 * I certainly don't mind taking on the task!
