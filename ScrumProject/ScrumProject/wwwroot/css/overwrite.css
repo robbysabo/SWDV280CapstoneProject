@@ -1,4 +1,6 @@
-﻿.bg-lin-red-to-light {
+﻿/* Force push into GitHub -- Reason for this comment */
+
+.bg-lin-red-to-light {
     background: linear-gradient(var(--cust-red), var(--cust-light));
 }
 
@@ -13,7 +15,9 @@
 .bg-lin-red-sage {
     background: linear-gradient(var(--cust-red), var(--cust-sage));
 }
-
+.nav-admin {
+    background: linear-gradient(to right, var(--cust-sage) 80%, rgba(255, 0, 0));
+}
 .bg-mechanic {
     background: linear-gradient(rgba(var(--cust-light-rgb), 0.9), rgba(var(--cust-sage-rgb), 0.4)), url(/images/pouringoil.jpg) center no-repeat;
     background-size: cover;
