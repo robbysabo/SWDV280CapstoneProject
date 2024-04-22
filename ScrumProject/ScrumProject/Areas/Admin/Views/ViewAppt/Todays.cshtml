@@ -1,15 +1,16 @@
 ﻿@using ScrumProject.ViewModels;
 @using ScrumProject.Models.DataLayer;
 
+<!-- Data Table -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+
 
 <h1 class="text-center mt-5 pt-3">Today</h1>
-
-<div class="my-3">
-    <a class="btn btn-outline-dark" href="@Url.Action("Index", "ViewAppt")">All Appointments</a>
+<div class="mb-3">
+    <a class="btn btn-outline-dark" href="@Url.Action("Index", "ViewAppt")">Today</a>
 </div>
 
-
-<table class="table table-striped">
+<table id="myTable" class="table table-striped">
     <thead>
         <tr>
             <th>First Name</th>
@@ -23,18 +24,24 @@
     <tbody>
         @foreach (var appointment in Model)
         {
-            if (@appointment.RequestDate == DateTime.Today.AddDays(-4))
+            if (@appointment.RequestDate == DateTime.Today)
             {
-
-                <tr>
-                    <td>@appointment.ContactFname</td>
-                    <td>@appointment.ContactLname</td>
-                    <td>@appointment.ContactEmail</td>
-                    <td>@appointment.ContactPhone</td>
-                    <td>@appointment.RequestDate.ToString("d")</td>
-                    <td>@appointment.Description</td>
-                </tr>
+                <td>@appointment.ContactFname</td>
+                <td>@appointment.ContactLname</td>
+                <td>@appointment.ContactEmail</td>
+                <td>@appointment.ContactPhone</td>
+                <td>@appointment.RequestDate.ToString("d")</td>
+                <td>@appointment.Description</td>
             }
         }
     </tbody>
 </table>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+
+
+<!-- initialize table-->
+<script>
+    new DataTable('#myTable');
+</script>
