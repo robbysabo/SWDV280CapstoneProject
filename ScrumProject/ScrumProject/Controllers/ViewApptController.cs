@@ -1,11 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Crypto.Signers;
 using ScrumProject.Models.DataAccess;
 using ScrumProject.Models.DataLayer;
+using ScrumProject.ViewModels;
+using static ScrumProject.ViewModels.ViewApptViewModel;
 
 namespace ScrumProject.Controllers
 {
     public class ViewApptController : Controller
     {
+
+
         private Repository<Appointment> appt { get; set; }
         //private Repository<AppointmentType> apptType { get; set; }
 
@@ -23,7 +30,13 @@ namespace ScrumProject.Controllers
             return View(upcomingAppointments);
         }
 
+        public IActionResult Todays()
+        {
+            var upcomingAppointments = appt.List(new QueryOptions<Appointment> { OrderBy = a => a.RequestDate }).ToList();
 
+
+            return View(upcomingAppointments);
+        }
 
         //public IActionResult Index()
         //{
