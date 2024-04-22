@@ -1,17 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Org.BouncyCastle.Crypto.Signers;
 using ScrumProject.Models.DataAccess;
 using ScrumProject.Models.DataLayer;
-using ScrumProject.ViewModels;
-using static ScrumProject.ViewModels.ViewApptViewModel;
 
-namespace ScrumProject.Controllers
+namespace ScrumProject.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class ViewApptController : Controller
     {
-
 
         private Repository<Appointment> appt { get; set; }
         //private Repository<AppointmentType> apptType { get; set; }
