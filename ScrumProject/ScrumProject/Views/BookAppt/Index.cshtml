@@ -1,48 +1,55 @@
 ﻿@using ScrumProject.ViewModels;
 @using ScrumProject.Models.DataLayer;
 @model ScrumProject.ViewModels.BookApptViewModel
+@{
+    ViewData["Title"] = "Appointments";
+}
 
-<div class="container mt-5">
-
-    <h2>Appointment Form</h2>
+<div class="container mt-5 pt-4">
+    <h2 class="mb-3">Appointment Form</h2>
     <!--validation message-->
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <!--Appointment entry form-->
-    <form asp-action="Index" method="post">
-        <div class="form-row">
-            <div class="form-group col-md-6">
+    <form class="border p-3" asp-action="Index" method="post">
+        
+        <!-- Name -->
+        <div class="row">
+            <div class="form-group col-sm-6">
                 <label for="firstName">First Name</label>
                 <span class="text-danger">*</span>
                 <input asp-for="@Model.Appointment.ContactFname" type="text" class="form-control" id="firstName">
             </div>
-
-            <div class="form-group col-md-6">
+            <div class="form-group col-sm-6">
                 <label for="lastName">Last Name</label>
                 <span class="text-danger">*</span>
                 <input asp-for="@Model.Appointment.ContactLname" type="text" class="form-control" id="lastName">
             </div>
         </div>
 
-        <div class="form-group">
+        <!-- Email -->
+        <div class="form-group pt-2">
             <label for="email">Email</label>
             <span class="text-danger">*</span>
             <input asp-for="@Model.Appointment.ContactEmail" type="email" class="form-control" id="email">
         </div>
 
-        <div class="form-group">
+        <!-- Phone -->
+        <div class="form-group pt-2">
             <label for="phoneNumber">Phone Number</label>
             <span class="text-danger">*</span>
             <input asp-for="@Model.Appointment.ContactPhone" type="tel" class="form-control" id="phoneNumber">
         </div>
 
-        <div class="form-group">
+        <!-- Date -->
+        <div class="form-group pt-2">
             <label for="requestedDate">Requested Date</label>
             <span class="text-danger">*</span>
             <input asp-for="@Model.Appointment.RequestDate" type="date" class="form-control" id="requestedDate">
         </div>
 
-        <div class="form-group">
+        <!-- Appointment Type -->
+        <div class="form-group pt-2">
             <label for="types" class="form-label">Appointment Type</label>
             <span class="text-danger">*</span>
             <select class="form-select" asp-items="@Model.TypeSelectList" asp-for="@Model.Appointment.AppointmentTypeId">
@@ -50,7 +57,8 @@
             </select>
         </div>
 
-        <div class="form-group">
+        <!-- Comments -->
+        <div class="form-group pt-2">
             <label for="description">Description</label>
             <span class="text-danger">*</span>
             <textarea asp-for="@Model.Appointment.Description" class="form-control" id="description" rows="3"></textarea>
@@ -59,7 +67,10 @@
         <input asp-for="@Model.Appointment.ApptStat" type="hidden">
         <input asp-for="@Model.Appointment.AppointmentId" type="hidden">
 
-        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        <!-- Submit-->
+        <div class="mt-3">
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+        </div>
     </form>
 </div>
 

@@ -34,7 +34,7 @@ namespace ScrumProject.Controllers
 
             if (ModelState.IsValid)
             {
-                var user = new AuthUser { UserName = model.Username };
+                var user = new AuthUser { UserName = model.Username, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded) //if user is created successfully sign in/redirect to home

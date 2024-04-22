@@ -16,16 +16,24 @@
 </head>
 <body class="bg-custom-sage">
     <header class="mb-5">
-        <nav class="navbar fixed-top navbar-expand-lg bg-green-dark shadow-sm navbar-dark">
+
+        <nav class="navbar  navbar-expand-lg @(@User.IsInRole("Admin") ? "nav-admin" : "bg-custom-sage") shadow-sm navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index" asp-area="">Logo</a>
+
+
+                <a class="navbar-brand text-black" asp-controller="Home" asp-action="Index" asp-area="">Logo</a>
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navItems">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
+
+
+                            <a class="nav-link active text-black" aria-current="page" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" asp-controller="Contact" asp-action="Index" asp-area="">Contact Us</a>
@@ -45,12 +53,31 @@
                         @if (signInManager.IsSignedIn(User))
                         {
                             <!-- Signed in user - logout and username -->
-                            <li class="nav-item">
-                                <form method="post" asp-action="LogOut" asp-controller="Account" asp-area="">
-                                    <button type="submit" class="btn btn-light me-2">Logout</button>
-                                </form>
+
+
+                            <li class="dropdown-center">
+                                <button class="btn dropdown-toggle btn-outline-dark nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @User.Identity.Name
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    @if (@User.IsInRole("Admin")){
+                                    <!-- Add Admin link -->
+                                        <li>
+
+                                            <a class="dropdown-item" asp-action="Index" asp-controller="Admin" asp-area="Admin">Admin</a>
+                                       
+                                        </li>
+                                    }
+                                    <li>
+                                        <form method="post" asp-action="LogOut" asp-controller="Account" asp-area="">
+                                            <button class="dropdown-item" type="submit">Logout</button>
+                                        </form>
+                                    </li>
+                                    
+                                </ul>
                             </li>
-                            <li class="nav-item text-light mt-2 me-2">@User.Identity.Name</li>
+
+
                         }
                         else
                         {
@@ -65,11 +92,16 @@
                             </li>
                         }
 
+<<<<<<< HEAD
                         <!-- Add Admin link -->
                         <li class="nav-item">
                             <a asp-action="Index" asp-controller="User" asp-area="Admin" class="nav-link">Admin</a>
                         </li>                      
+=======
+
+>>>>>>> main
                     </ul>
+                    
 
                 </div>
             </div>
@@ -147,9 +179,6 @@
                         </p>
                         <p>
                             <a asp-controller="BookAppt" asp-action="Index" class="text-reset">Book An Appointment</a>
-                        </p>
-                        <p>
-                            <a asp-controller="Forms" asp-action="Index" class="text-reset">Download Our Forms</a>
                         </p>
                     </div>
                     <!-- Grid column -->
