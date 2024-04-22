@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "SPContext": "Server=172.22.10.1,1433\SQLDEV01;Database=ScrumProject;User Id=sa;Password=Pa$$w0rd;Integrated Security=False;Encrypt=False;TrustServerCertificate=False;"
+  }
+}

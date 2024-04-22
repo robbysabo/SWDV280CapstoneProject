@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ScrumProject/.vs/ScrumProject/v17/.suo
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/SWDV280CapstoneProject/v17/.wsuo
+/.vs/SWDV280CapstoneProject/v17/DocumentLayout.json
+/.vs/SWDV280CapstoneProject/FileContentIndex/1ce69cda-4cdc-463c-8c58-e50dc91f3cdb.vsidx
+/.vs/SWDV280CapstoneProject/v17/.wsuo
+/.vs/SWDV280CapstoneProject/FileContentIndex

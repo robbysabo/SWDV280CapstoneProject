@@ -57,15 +57,23 @@
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
     --cust-sage: #B5C99A;
+    --cust-sage-dark: #5AA897;
     --cust-red: #862B0D;
     --cust-light: #FFF9C9;
     --cust-medium: #FFC95F;
     --cust-dark: #1C0A00;
     --cust-sage-rgb: 181, 201, 154;
+    --cust-sage-dark-rgb: 90, 168, 151;
     --cust-red-rgb: 134, 43, 13;
     --cust-light-rgb: 255, 249, 201;
     --cust-medium-rgb: 255, 201, 95;
     --cust-dark-rgb: 28, 10, 0;
+    --exp-green-light: #D8E9A8;
+    --exp-green-medium: #4E9F3D;
+    --exp-green-dark: #1E5128;
+    --exp-green-light-rgb: 216, 233, 168;
+    --exp-green-medium-rgb: 78, 159, 61;
+    --exp-green-dark-rgb: 30, 81, 40;
 }
 
 *,
@@ -7712,11 +7720,6 @@ textarea.form-control-lg {
   color: rgba(var(--bs-body-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-custom-brown {
-    --bs-text-opacity: 1;
-    color: rgba(var(--cust-brown-rgb), var(--bs-text-opacity)) !important;
-}
-
 .text-custom-red {
     --bs-text-opacity: 1;
     color: rgba(var(--cust-red-rgb), var(--bs-text-opacity)) !important;
@@ -7831,6 +7834,11 @@ textarea.form-control-lg {
 .bg-custom-sage {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--cust-sage-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-custom-sage-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--cust-sage-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-custom-red {

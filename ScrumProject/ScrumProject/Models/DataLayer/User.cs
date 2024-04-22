@@ -9,7 +9,6 @@ namespace ScrumProject.Models.DataLayer;
 public partial class User
 {
     [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     [Column("UserID")]
     public int UserId { get; set; }
 
@@ -34,5 +33,5 @@ public partial class User
 
     [ForeignKey("UserTypeId")]
     [InverseProperty("Users")]
-    public virtual UserType? UserType { get; set; } = null!;
+    public virtual UserType UserType { get; set; } = null!;
 }

@@ -22,7 +22,7 @@
 }
 
 .bg-light-to-md {
-    background: linear-gradient(var(--cust-light), var(--cust-medium));
+    background: linear-gradient(var(--cust-light), var(--exp-green-light));
 }
 
 .custom-rounded {

@@ -46,7 +46,7 @@ namespace ScrumProject.Controllers
             if (ModelState.IsValid)
             {
                 model.Appointment.AppointmentType = model.SelectedAppointmentType; //set appointment type
-                model.Appointment.ApptStat = " "; //set open appointment status
+               // model.Appointment.ApptStat = " "; //set open appointment status
 
                 appt.Insert(model.Appointment);
                 appt.Save();

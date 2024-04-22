@@ -1,0 +1,59 @@
+﻿@model List<ScrumProject.Models.DataLayer.WorkerImage>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-start">
+    <div class="container mt-3">
+        <section class="container-fluid d-flex justify-content-center align-items-center text-center">
+            
+                <div class="bg-green-light custom-rounded bg-opacity-75 p-5 shadow">
+                    <div class="row">
+                    <div class="card h-100 w-100 shadow-sm bg-custom-sage">
+                        
+                        <img class="card-img" height="350px" width="100" src="/images/tech3.jpg" alt="Scotts inside shop"/>
+                        <div style="opacity: 90%;" class="card-img-overlay text-white overflow-hidden">
+                            <h2 class="card-title p-0">Meet our team:</h2>
+                            <p class="card-text " style="margin-top:3em">
+                                But Scotts Auto Repair is more than just one person; it's a collective of dedicated individuals who share a common commitment to delivering excellence in every aspect of our work. Our team of skilled artisans and professionals bring a wealth of expertise and a diversity of talents to the table, ensuring that every customer receives nothing short of perfection.
+                            </p>
+
+                        </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        @foreach (var i in Model)
+        {
+            <div class="col float-md-start m-4">
+                <img class="rounded-3 shadow-lg" width="200em" height="250em" src="/@i.ImageSrc" alt="@i.ImageAlt" />
+                <br />
+                <p class="mt-2">@i.Description</p>
+                <hr />
+
+            </div>
+        }
+        @* <div class="row">        
+            <div class="d-grid">
+                <p class="col-10">
+
+                    At the heart of our establishment is Scott, a visionary entrepreneur with 50 years of experience in Automotive repair industry. With a keen eye for detail and a relentless pursuit of excellence, Scott has curated a space where quality craftsmanship and exceptional service intersect.
+                    <br />
+                    But Scotts Auto Repair is more than just one person; it's a collective of dedicated individuals who share a common commitment to delivering excellence in every aspect of our work. Our team of skilled artisans and professionals bring a wealth of expertise and a diversity of talents to the table, ensuring that every customer receives nothing short of perfection.
+                </p>
+            </div>
+        </div> *@
+
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+
