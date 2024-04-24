@@ -1,7 +1,10 @@
 ﻿@using ScrumProject.ViewModels;
 @using ScrumProject.Models.DataLayer;
+@{
+    ViewData["Title"] = "Admin - Appointments";
+}
 
-<!-- Data Table -->
+<!-- DataTable library -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
 
 
@@ -14,6 +17,7 @@
 <table id="myTable" class="table table-striped">
     <thead>
         <tr>
+            <th>Type</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
@@ -23,9 +27,32 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var appointment in Model)
-        {
-            <tr>
+            @foreach (var appointment in Model)
+            {
+                <tr>
+                    @switch (appointment.AppointmentTypeId)
+                    {
+                        case 1:
+                            <td>New Hire</td>
+                            ;
+                            break;
+                        case 2:
+                            <td>Client</td>
+                            ;
+                            break;
+                        case 3:
+                            <td>Collision Repair</td>
+                            ;
+                            break;
+                        case 4:
+                            <td>Painting</td>
+                            ;
+                            break;
+                        case 5:
+                            <td>Specialty Painting</td>
+                            ;
+                            break;
+                    }
                 <td>@appointment.ContactFname</td>
                 <td>@appointment.ContactLname</td>
                 <td>@appointment.ContactEmail</td>

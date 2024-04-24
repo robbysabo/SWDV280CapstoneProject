@@ -5,7 +5,7 @@ using ScrumProject.Models.DataLayer;
 
 namespace ScrumProject.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class ViewApptController : Controller
     {

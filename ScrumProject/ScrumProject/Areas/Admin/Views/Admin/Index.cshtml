@@ -12,7 +12,11 @@
 <h1>Admin Page</h1>
 
 <!-- <button class="btn btn-primary" onclick="showEditOverlay()">Edit</button>-->
-<button class="btn btn-success" onclick="showNewUserOverlay()">New User</button>
+<div class="d-flex flex-row">
+    <button class="btn btn-success me-4" onclick="showNewUserOverlay()">New User</button>
+    <a class="btn btn-success" asp-controller="ViewAppt" asp-action="Index" asp-area="Admin">Appointments</a>
+</div>
+
 
 <!-- Overlay for Edit -->
 <div id="editOverlay" class="overlay">

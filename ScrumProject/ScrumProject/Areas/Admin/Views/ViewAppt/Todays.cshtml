@@ -1,7 +1,10 @@
 ﻿@using ScrumProject.ViewModels;
 @using ScrumProject.Models.DataLayer;
+@{
+    ViewData["Title"] = "Admin - Appointments";
+}
 
-<!-- Data Table -->
+<!-- DataTables library -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
 
 
@@ -11,9 +14,10 @@
 </div>
 
 <div class="table-responsive">
-    <table id="myTable" class="table table-striped" >
+    <table id="myTable" class="table table-striped">
         <thead>
             <tr>
+                <th>Type</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
@@ -25,14 +29,39 @@
         <tbody>
             @foreach (var appointment in Model)
             {
-                if (@appointment.RequestDate == DateTime.Today)
+                if (appointment.RequestDate == DateTime.Today)
                 {
-                <td>@appointment.ContactFname</td>
-                <td>@appointment.ContactLname</td>
-                <td>@appointment.ContactEmail</td>
-                <td>@appointment.ContactPhone</td>
-                <td>@appointment.RequestDate.ToString("d")</td>
-                <td>@appointment.Description</td>
+                    <tr>
+                        @switch (@appointment.AppointmentTypeId)
+                        {
+                            case 1:
+                                <td>New Hire</td>
+                                ;
+                                break;
+                            case 2:
+                                <td>Client</td>
+                                ;
+                                break;
+                            case 3:
+                                <td>Collision Repair</td>
+                                ;
+                                break;
+                            case 4:
+                                <td>Painting</td>
+                                ;
+                                break;
+                            case 5:
+                                <td>Specialty Painting</td>
+                                ;
+                            break;
+                    }
+                    <td>@appointment.ContactFname</td>
+                    <td>@appointment.ContactLname</td>
+                    <td>@appointment.ContactEmail</td>
+                    <td>@appointment.ContactPhone</td>
+                    <td>@appointment.RequestDate.ToString("d")</td>
+                    <td>@appointment.Description</td>
+                </tr>
                 }
             }
         </tbody>
