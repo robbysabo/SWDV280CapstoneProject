@@ -16,3 +16,8 @@ MWT 4/24/24
 	appoinment persisted in db/in appointments page - pass
 	FAQ page - pass
 	Forms/Downloads - pass
+
+===============================================
+MWT 4/24/24
+	Added ability to mark appoinents as complete. 
+	retested everything to ensure nothing else is broken
