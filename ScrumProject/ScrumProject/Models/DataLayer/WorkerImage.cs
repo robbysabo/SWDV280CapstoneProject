@@ -20,4 +20,7 @@ public partial class WorkerImage
 
     [Unicode(false)]
     public string? Description { get; set; }
+
+    [Unicode(false)]
+    public string? EmployeeName { get; set; }
 }
