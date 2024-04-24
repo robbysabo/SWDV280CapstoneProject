@@ -1,0 +1,18 @@
+﻿TEST LOG
+==================================================================
+MWT 4/24/24
+	All links work - pass
+	login/logout- pass
+	register from home - pass
+	register from admin - pass
+	admin page only visible to admin user - pass
+	delete user - pass
+	add to admin/remove from admin - pass
+	view appointments page - pass
+	view appointments search functionality - pass
+	view appointments paging - pass
+	contact form - pass
+	book appointment - pass
+	appoinment persisted in db/in appointments page - pass
+	FAQ page - pass
+	Forms/Downloads - pass
