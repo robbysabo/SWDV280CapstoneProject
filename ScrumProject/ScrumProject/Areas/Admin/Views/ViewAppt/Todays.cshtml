@@ -24,12 +24,14 @@
                 <th>Phone</th>
                 <th>Requested Date</th>
                 <th>Description</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var appointment in Model)
             {
-                if (appointment.RequestDate == DateTime.Today)
+                <!--mwt 2024: added logic to only show appointment if not complete -->
+                if (appointment.RequestDate == DateTime.Today && appointment.ApptStat != "C")
                 {
                     <tr>
                         @switch (@appointment.AppointmentTypeId)
@@ -61,6 +63,7 @@
                     <td>@appointment.ContactPhone</td>
                     <td>@appointment.RequestDate.ToString("d")</td>
                     <td>@appointment.Description</td>
+                    <td><a asp-action="RemoveAppt" asp-route-id="@appointment.AppointmentId">Complete</a></td>
                 </tr>
                 }
             }
